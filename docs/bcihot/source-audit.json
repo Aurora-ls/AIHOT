@@ -1,0 +1,1318 @@
+{
+  "reviewDate": "2026-10-12",
+  "timezone": "Asia/Shanghai",
+  "verificationScope": "只读 HTTP 可达性、原始响应和现有列表解析器；不是完整采集、正文补齐、版权许可或生产可用性验收",
+  "probes": [
+    {
+      "id": "nature-bmi",
+      "url": "https://www.nature.com/subjects/brain-machine-interface.rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.nature.com/subjects/brain-machine-interface.rss",
+      "contentType": "application/rss+xml; charset=utf-8",
+      "bytes": 13504,
+      "entries": 30,
+      "titles": [
+        "Brain–machine interface : nature.com subject feeds",
+        "Detangling spinal respiratory network responses to cervical epidural stimulation after spinal cord injury",
+        "Assistive algorithms influence neural representations in motor brain-computer interfaces"
+      ],
+      "dates": [
+        "Mon, 12 Oct 2026 07:39:41 +0000",
+        "Mon, 28 Sep 2026 00:00:00 +0000",
+        "Tue, 15 Sep 2026 00:00:00 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:05:33.139Z",
+      "bodySha256": "1705d698e6f6cc5484f327b699ca5c4e7793f847780e373c6dc7799d905eb66d"
+    },
+    {
+      "id": "nature-neuroscience",
+      "url": "https://www.nature.com/neuro.rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.nature.com/neuro.rss",
+      "contentType": "application/rss+xml; charset=utf-8",
+      "bytes": 17365,
+      "entries": 8,
+      "titles": [
+        "Nature Neuroscience",
+        "Nature Neuroscience",
+        "Alzheimer’s disease target and drug discovery by leveraging multiomics and electronic health data"
+      ],
+      "dates": [
+        "2026-10-08",
+        "2026-10-07",
+        "2026-10-07"
+      ],
+      "checkedAt": "2026-10-12T08:05:33.166Z",
+      "bodySha256": "f2a4b56cd50111b7a89c975a31b08f021982e13867e38293bd2717e94b7e4b44"
+    },
+    {
+      "id": "nature-biomedeng",
+      "url": "https://www.nature.com/natbiomedeng.rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.nature.com/natbiomedeng.rss",
+      "contentType": "application/rss+xml; charset=utf-8",
+      "bytes": 17863,
+      "entries": 8,
+      "titles": [
+        "Nature Biomedical Engineering",
+        "Nature Biomedical Engineering",
+        "A bioengineered model of human placental exposure to environmental metals during pregnancy"
+      ],
+      "dates": [
+        "2026-10-09",
+        "2026-10-07",
+        "2026-10-06"
+      ],
+      "checkedAt": "2026-10-12T08:05:33.167Z",
+      "bodySha256": "a8e130fe70a6287feb04dfc5c87277edd0d87d3140bf47c4397793432757b9c7"
+    },
+    {
+      "id": "nature-electronics",
+      "url": "https://www.nature.com/natelectron.rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.nature.com/natelectron.rss",
+      "contentType": "application/rss+xml; charset=utf-8",
+      "bytes": 16537,
+      "entries": 8,
+      "titles": [
+        "Nature Electronics",
+        "Nature Electronics",
+        "Horizontal-up microfluidics for embedded chip cooling with a dielectric fluid"
+      ],
+      "dates": [
+        "2026-10-07",
+        "2026-10-06",
+        "2026-10-02"
+      ],
+      "checkedAt": "2026-10-12T08:05:33.168Z",
+      "bodySha256": "e8414e7af6f1fc622aa7b5ab17890dce22e07beddf5f0f8d269dcb48c51e24cc"
+    },
+    {
+      "id": "arxiv-qbio",
+      "url": "https://rss.arxiv.org/rss/q-bio.NC",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://rss.arxiv.org/rss/q-bio.NC",
+      "contentType": "application/rss+xml",
+      "bytes": 16730,
+      "entries": 7,
+      "titles": [
+        "q-bio.NC updates on arXiv.org",
+        "FlyHack: Stress-Testing Mechanistic Claims in a Connectome-Constrained Visual Model",
+        "Excitability across scales: a unifying EI model"
+      ],
+      "dates": [
+        "Mon, 12 Oct 2026 00:00:00 -0400",
+        "Mon, 12 Oct 2026 00:00:00 -0400",
+        "Mon, 12 Oct 2026 00:00:00 -0400"
+      ],
+      "checkedAt": "2026-10-12T08:06:21.746Z",
+      "bodySha256": "34a58275d04231443b880d0fd5c6669f547539ff341635ec5714a5cb21f8855b"
+    },
+    {
+      "id": "arxiv-csne",
+      "url": "https://rss.arxiv.org/rss/cs.NE",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://rss.arxiv.org/rss/cs.NE",
+      "contentType": "application/rss+xml",
+      "bytes": 27860,
+      "entries": 12,
+      "titles": [
+        "cs.NE updates on arXiv.org",
+        "Neuromorphic Satellite Intelligence: A Formal Framework for Event-Driven Architectures, Spike-Based Algorithms, and Quantitative Energy-Accuracy Trade-offs",
+        "Energy-Efficient Spiking Neural Networks for Sensing-Aided Beam Prediction"
+      ],
+      "dates": [
+        "Mon, 12 Oct 2026 00:00:00 -0400",
+        "Mon, 12 Oct 2026 00:00:00 -0400",
+        "Mon, 12 Oct 2026 00:00:00 -0400"
+      ],
+      "checkedAt": "2026-10-12T08:06:21.752Z",
+      "bodySha256": "ca87ff5415dc737486ca05b24747cc429df07561dd6f68cc8741baf17709f0bd"
+    },
+    {
+      "id": "biorxiv-neuro",
+      "url": "https://connect.biorxiv.org/biorxiv_xml.php?subject=neuroscience",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://connect.biorxiv.org/biorxiv_xml.php?subject=neuroscience",
+      "contentType": "application/xml;\")",
+      "bytes": 79594,
+      "entries": 30,
+      "titles": [
+        "bioRxiv Subject Collection: Neuroscience",
+        "bioRxiv",
+        "Absence of the Earths magnetic field activates stress-related brain circuits in a mammal"
+      ],
+      "dates": [
+        "2026-10-11",
+        "2026-10-11",
+        "2026-10-11"
+      ],
+      "checkedAt": "2026-10-12T08:06:21.755Z",
+      "bodySha256": "a9047ad2e635880928f4dc82f62f7cb2afcde1f120ab8fc3763cb5cb3c0f023e"
+    },
+    {
+      "id": "medrxiv-neurology",
+      "url": "https://connect.medrxiv.org/medrxiv_xml.php?subject=neurology",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://connect.medrxiv.org/medrxiv_xml.php?subject=neurology",
+      "contentType": "application/xml;\")",
+      "bytes": 96797,
+      "entries": 30,
+      "titles": [
+        "medrxiv Subject Collection: Neurology",
+        "medrxiv",
+        "Static and dynamic noise abolish altruistic biases in Parkinson's disease independent of deep brain stimulation"
+      ],
+      "dates": [
+        "2026-10-11",
+        "2026-10-11",
+        "2026-10-11"
+      ],
+      "checkedAt": "2026-10-12T08:06:21.758Z",
+      "bodySha256": "5b948f9290ac717a8399622f7f0040d51c3095f1169cd08db4fece2b2fcfd99d"
+    },
+    {
+      "id": "mne-releases",
+      "url": "https://github.com/mne-tools/mne-python/releases.atom",
+      "kind": "rss",
+      "error": "fetch failed",
+      "checkedAt": "2026-10-12T08:08:20.374Z"
+    },
+    {
+      "id": "moabb-releases",
+      "url": "https://github.com/NeuroTechX/moabb/releases.atom",
+      "kind": "rss",
+      "error": "The operation was aborted due to timeout",
+      "checkedAt": "2026-10-12T08:08:20.379Z"
+    },
+    {
+      "id": "braindecode-releases",
+      "url": "https://github.com/braindecode/braindecode/releases.atom",
+      "kind": "rss",
+      "error": "The operation was aborted due to timeout",
+      "checkedAt": "2026-10-12T08:08:20.382Z"
+    },
+    {
+      "id": "brainflow-releases",
+      "url": "https://github.com/brainflow-dev/brainflow/releases.atom",
+      "kind": "rss",
+      "error": "The operation was aborted due to timeout",
+      "checkedAt": "2026-10-12T08:08:20.385Z"
+    },
+    {
+      "id": "mne-api",
+      "url": "https://api.github.com/repos/mne-tools/mne-python/releases?per_page=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://api.github.com/repos/mne-tools/mne-python/releases?per_page=5",
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 8998,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:09:13.397Z",
+      "samples": [
+        {
+          "title": "v1.13.2",
+          "url": "https://github.com/mne-tools/mne-python/releases/tag/v1.13.2",
+          "publishedAt": "2026-09-11T16:34:07Z"
+        },
+        {
+          "title": "v1.13.1",
+          "url": "https://github.com/mne-tools/mne-python/releases/tag/v1.13.1",
+          "publishedAt": "2026-09-11T15:35:36Z"
+        }
+      ],
+      "bodySha256": "f3a4de9e31b8ce9439d63759b12d25a3b2676e44b0b5004491a053b8e48d37bc"
+    },
+    {
+      "id": "moabb-api",
+      "url": "https://api.github.com/repos/NeuroTechX/moabb/releases?per_page=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://api.github.com/repos/NeuroTechX/moabb/releases?per_page=5",
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 19969,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:09:13.400Z",
+      "samples": [
+        {
+          "title": "v1.7.2",
+          "url": "https://github.com/NeuroTechX/moabb/releases/tag/v1.7.2",
+          "publishedAt": "2026-09-14T12:47:44Z"
+        },
+        {
+          "title": "v1.7.1",
+          "url": "https://github.com/NeuroTechX/moabb/releases/tag/v1.7.1",
+          "publishedAt": "2026-08-31T21:34:54Z"
+        }
+      ],
+      "bodySha256": "7f977985a4ad43f680cbfd2db51fb3e430ee1056f82c532510414e856fb3fab9"
+    },
+    {
+      "id": "braindecode-api",
+      "url": "https://api.github.com/repos/braindecode/braindecode/releases?per_page=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://api.github.com/repos/braindecode/braindecode/releases?per_page=5",
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 45465,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:09:13.402Z",
+      "samples": [
+        {
+          "title": "braindecode 1.8.1",
+          "url": "https://github.com/braindecode/braindecode/releases/tag/v1.8.1",
+          "publishedAt": "2026-08-31T14:23:41Z"
+        },
+        {
+          "title": "braindecode 1.8.0",
+          "url": "https://github.com/braindecode/braindecode/releases/tag/v1.8.0",
+          "publishedAt": "2026-08-31T12:50:53Z"
+        }
+      ],
+      "bodySha256": "64351a6543b05cfa2883ced0a977ff23268d9c68451e5da1e3e7b24e32f6bcdf"
+    },
+    {
+      "id": "brainflow-api",
+      "url": "https://api.github.com/repos/brainflow-dev/brainflow/releases?per_page=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://api.github.com/repos/brainflow-dev/brainflow/releases?per_page=5",
+      "contentType": "application/json; charset=utf-8",
+      "bytes": 59328,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:09:13.404Z",
+      "samples": [
+        {
+          "title": "5.23.0",
+          "url": "https://github.com/brainflow-dev/brainflow/releases/tag/5.23.0",
+          "publishedAt": "2026-09-26T09:04:30Z"
+        },
+        {
+          "title": "5.22.2",
+          "url": "https://github.com/brainflow-dev/brainflow/releases/tag/5.22.2",
+          "publishedAt": "2026-05-22T22:24:01Z"
+        }
+      ],
+      "bodySha256": "0147297a26a28e7b0473ed10bedfb608daafea498166351e06a64b04b6fcd5d1"
+    },
+    {
+      "id": "openbci-feed",
+      "url": "https://openbci.com/community/feed/",
+      "kind": "rss",
+      "status": 503,
+      "finalUrl": "https://openbci.com/community/feed/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 11767,
+      "entries": 0,
+      "titles": [
+        "OpenBCI Community &mdash; Down for Maintenance"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:10:14.232Z",
+      "bodySha256": "4cd5accbc6a6ebb32a9475c0e7235afefe25e1747a9e784567f24f6dd63f6629"
+    },
+    {
+      "id": "gtec-feed",
+      "url": "https://www.gtec.at/feed/",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.gtec.at/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 17729,
+      "entries": 15,
+      "titles": [
+        "g.tec medical engineering",
+        "g.tec medical engineering",
+        "Multimodal EEG, Eye Tracking, ECG &#038; GSR for Flight Simulation Research"
+      ],
+      "dates": [
+        "Mon, 20 Jul 2026 12:14:50 +0000",
+        "Wed, 08 Jul 2026 13:10:27 +0000",
+        "Mon, 06 Jul 2026 14:11:32 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:10:14.236Z",
+      "bodySha256": "dd2008f90587fc4cb91a6da9c2ce27922ebc0d2b4a57b386e8d67a7c0d4e62aa"
+    },
+    {
+      "id": "brainproducts-feed",
+      "url": "https://pressrelease.brainproducts.com/feed/",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://pressrelease.brainproducts.com/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 16240,
+      "entries": 10,
+      "titles": [
+        "Brain Products Press Release",
+        "Brain Products Press Release",
+        "Discover the latest updates in BrainVision Analyzer 2.3.2"
+      ],
+      "dates": [
+        "Fri, 28 Aug 2026 12:56:19 +0000",
+        "Fri, 28 Aug 2026 12:55:37 +0000",
+        "Fri, 28 Aug 2026 12:54:12 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:10:14.239Z",
+      "bodySha256": "3d8c39d36df81dafdebbba4606b38355cc7206df625b2d7bbeae7bacc170a788"
+    },
+    {
+      "id": "artinis-feed",
+      "url": "https://www.artinis.com/blog?format=rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://artinis.com/blogpost-all",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 1428505,
+      "entries": 0,
+      "titles": [
+        "(f)NIRS case studies &mdash; Artinis Medical Systems | (f)NIRS devices"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:10:14.241Z",
+      "bodySha256": "86e05416d8e2fd872bf2fa9de6af29d359577e92b7363759e77e6dda76fbdadb"
+    },
+    {
+      "id": "neuralink-updates",
+      "url": "https://neuralink.com/updates/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://neuralink.com/updates/",
+      "contentType": "text/html",
+      "bytes": 280224,
+      "entries": 0,
+      "titles": [
+        "Updates | Neuralink"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:11:05.883Z",
+      "bodySha256": "746d41ae0a35e7c16e721b6fbf9e973473b018ad844873433a6bb7be7b43ec45"
+    },
+    {
+      "id": "synchron-news",
+      "url": "https://synchron.com/news",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://synchron.com/news",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 375548,
+      "entries": 0,
+      "titles": [
+        "News — Synchron"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:11:05.886Z",
+      "bodySha256": "243a41bb3803469440208eafddb8bad8bf83f16570dc1d78afa6c38938ab5054"
+    },
+    {
+      "id": "precision-news",
+      "url": "https://precisionneuro.io/news/",
+      "kind": "web_list",
+      "status": 404,
+      "finalUrl": "https://www.precisionneuro.io/news",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 23650,
+      "entries": 0,
+      "titles": [
+        "404 | Precision"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:11:05.889Z",
+      "bodySha256": "6c7ffe8a1ff02263cc67e23277d4a49c274ce340835f65f4aed2a773930e5d6c"
+    },
+    {
+      "id": "paradromics-news",
+      "url": "https://www.paradromics.com/news",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://paradromics.com/news/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 76864,
+      "entries": 0,
+      "titles": [
+        "BCI News &amp; Company Updates | Paradromics"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:11:05.890Z",
+      "bodySha256": "599348e582de44d34beff7d529e03809615d33a933c2ab2d36f755b4454ab958"
+    },
+    {
+      "id": "clinicaltrials-api",
+      "url": "https://clinicaltrials.gov/api/v2/studies?query.term=%22brain-computer+interface%22+OR+%22brain-machine+interface%22&sort=LastUpdatePostDate%3Adesc&format=json&pageSize=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://clinicaltrials.gov/api/v2/studies?query.term=%22brain-computer+interface%22+OR+%22brain-machine+interface%22&sort=LastUpdatePostDate%3Adesc&format=json&pageSize=5",
+      "contentType": "application/json",
+      "bytes": 56137,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:16:43.452Z",
+      "samples": [
+        {
+          "id": "NCT07521930",
+          "title": "Interfacing With NeuroTechnology to Expand Neural Throughput (INTENT)",
+          "updatedAt": "2026-10-09",
+          "status": "RECRUITING"
+        },
+        {
+          "id": "NCT06187467",
+          "title": "Longitudinal Multimodal Profiling of Balance and Gait In Stroke",
+          "updatedAt": "2026-10-07",
+          "status": "COMPLETED"
+        }
+      ],
+      "bodySha256": "0c8f64099bc1f0782020da51755d7558e150ec97e5f360f95b66712d275fe1f3"
+    },
+    {
+      "id": "europepmc-api",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22brain-computer+interface%22+OR+%22brain-machine+interface%22%29+sort_date%3Ay&format=json&resultType=core&pageSize=5",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28%22brain-computer+interface%22+OR+%22brain-machine+interface%22%29+sort_date%3Ay&format=json&resultType=core&pageSize=5",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 20343,
+      "entries": 5,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:16:43.455Z",
+      "total": 15699,
+      "samples": [
+        {
+          "id": "42830114",
+          "source": "MED",
+          "title": "The Impact of Infectious Disease Severity on Stigma Associated With Affected Regions: A Facial Representation Perspective. ",
+          "publishedAt": "2026-12-01",
+          "preprint": {
+            "pubType": [
+              "IM",
+              "Journal Article"
+            ]
+          }
+        },
+        {
+          "id": "PMC13650562",
+          "source": "PMC",
+          "title": "Post-stroke spasticity: advances in network mechanisms and therapeutics",
+          "publishedAt": "2026-10-10",
+          "preprint": {
+            "pubType": [
+              "review-article",
+              "Review",
+              "Journal Article"
+            ]
+          }
+        }
+      ],
+      "bodySha256": "f05c1c40236472ce8fcc19ae0b6d32ed2194c9f33589e00362c640f7e23afd57"
+    },
+    {
+      "id": "artinis-rss",
+      "url": "https://artinis.com/blogpost-all?format=rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://artinis.com/blogpost-all?format=rss",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 398015,
+      "entries": 20,
+      "titles": [
+        "Case studies - Artinis Medical Systems | (f)NIRS devices",
+        "UX Design for Brite Connect Ultra: Making Large-Scale Hyperscanning Truly Scalable",
+        "Measuring brain signals in real-time: the potential of using wearable fNIRS in Brain-Computer Interface (BCI)"
+      ],
+      "dates": [
+        "Tue, 31 Mar 2026 14:32:20 +0000",
+        "Fri, 06 Feb 2026 10:30:00 +0000",
+        "Wed, 07 Jan 2026 13:00:00 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:16:43.457Z",
+      "bodySha256": "b2fd38104cfc187c20e9c1e10f34b67c573a9f6465338bc3d5469634c07d7387"
+    },
+    {
+      "id": "braingate-feed",
+      "url": "https://www.braingate.org/feed/",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.braingate.org/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 11847,
+      "entries": 10,
+      "titles": [
+        "BrainGate",
+        "Brown Publication Sheds Light on Mirror Neurons",
+        "BrainGate Covered by Washington Post"
+      ],
+      "dates": [
+        "Wed, 23 Sep 2026 18:55:59 +0000",
+        "Wed, 17 Jun 2026 12:36:27 +0000",
+        "Thu, 28 May 2026 14:48:20 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:16:43.459Z",
+      "bodySha256": "4c138af7c6a8ff810301e112536ea93df4fbfb1d8a1491ceb415b59da7f66d50"
+    },
+    {
+      "id": "paradromics-feed",
+      "url": "https://paradromics.com/feed/",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://paradromics.com/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 10077,
+      "entries": 10,
+      "titles": [
+        "Paradromics",
+        "Paradromics",
+        "Brainstem Stroke: Definition, Causes, and Emerging Treatments"
+      ],
+      "dates": [
+        "Wed, 02 Sep 2026 14:20:38 +0000",
+        "Thu, 23 Jul 2026 13:40:15 +0000",
+        "Tue, 14 Jul 2026 13:54:13 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:20:23.679Z",
+      "bodySha256": "88ede5f89005d3a6dffb7e93a2bd247c71d05edecc51a056a6ed1ecc71ced914"
+    },
+    {
+      "id": "neuroxess-home",
+      "url": "https://www.neuroxess.com/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.neuroxess.com/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 61895,
+      "entries": 0,
+      "titles": [
+        "NeuroXess 脑虎科技"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:20:23.683Z",
+      "bodySha256": "7542880da80bf22d607c544b4e647906322ad161213b3c39a14bb0cc792652a1"
+    },
+    {
+      "id": "neuracle-home",
+      "url": "https://www.neuracle.cn/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.neuracle.cn/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 915,
+      "entries": 0,
+      "titles": [
+        "博睿康"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:20:23.686Z",
+      "bodySha256": "12def1bcfaebef0d726dd1f2e870c4d0180b5d1c1d5018b3712de1cf7d788869"
+    },
+    {
+      "id": "cas-brain-news",
+      "url": "https://cebsit.cas.cn/xwdt/",
+      "kind": "web_list",
+      "status": 404,
+      "finalUrl": "https://cebsit.cas.cn/xwdt/",
+      "contentType": "text/html",
+      "bytes": 1235,
+      "entries": 0,
+      "titles": [
+        "页面没有找到"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:20:23.689Z",
+      "bodySha256": "42113260e68e1587fd7ad22da8f3d0ebc1471e6b9145b4e3c1a8a4caf13967cf"
+    },
+    {
+      "id": "cas-brain-home",
+      "url": "https://cebsit.cas.cn/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://cebsit.cas.cn/",
+      "contentType": "text/html",
+      "bytes": 122857,
+      "entries": 0,
+      "titles": [
+        "中国科学院脑科学与智能技术卓越创新中心"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:22:29.672Z",
+      "bodySha256": "046e245360325e21a1e7f83274ff31421c3f428158e6b950c437e4487db76d81"
+    },
+    {
+      "id": "precision-home",
+      "url": "https://www.precisionneuro.io/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.precisionneuro.io/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 227470,
+      "entries": 0,
+      "titles": [
+        "Precision"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:22:29.673Z",
+      "bodySha256": "d551583c5e98794f6a8bd7c7cf5abc89323ccfbcd5333c0d425236b13d26d1d8"
+    },
+    {
+      "id": "brainco-home",
+      "url": "https://www.brainco.cn/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.brainco.cn/",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 115855,
+      "entries": 0,
+      "titles": [
+        "BrainCo强脑科技 - 人机交互·脑机接口调控·前沿脑机接口解决方案"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:22:29.674Z",
+      "bodySha256": "8c46eca42d4c5fe19663f080d0a01140b672ca99a63665784835acbfe286947a"
+    },
+    {
+      "id": "neurochip-journal",
+      "url": "https://iopscience.iop.org/journal/rss/2634-4386",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://iopscience.iop.org/journal/rss/2634-4386",
+      "contentType": "application/xml;charset=UTF-8",
+      "bytes": 29454,
+      "entries": 10,
+      "titles": [
+        "Neuromorphic Computing and Engineering - latest papers",
+        "IOPscience",
+        "Modular memristor model with synaptic-like plasticity and volatile memory"
+      ],
+      "dates": [
+        "2026-10-07T23:00:00Z",
+        "2026-09-27T23:00:00Z",
+        "2026-09-24T23:00:00Z"
+      ],
+      "checkedAt": "2026-10-12T08:22:29.674Z",
+      "bodySha256": "af2d80f668c5f3eaa67fd4157506f8e9938dab0d727ab456ee250a147cacf1de"
+    },
+    {
+      "id": "jne-feed",
+      "url": "https://iopscience.iop.org/journal/rss/1741-2552",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://iopscience.iop.org/journal/rss/1741-2552",
+      "contentType": "application/xml;charset=UTF-8",
+      "bytes": 34383,
+      "entries": 10,
+      "titles": [
+        "Journal of Neural Engineering - latest papers",
+        "IOPscience",
+        "Neural coupling between spinal motor neurons of the first dorsal interosseous muscle during individual index finger flexion and pinch tasks"
+      ],
+      "dates": [
+        "2026-10-08T23:00:00Z",
+        "2026-10-08T23:00:00Z",
+        "2026-10-07T23:00:00Z"
+      ],
+      "checkedAt": "2026-10-12T08:23:25.759Z",
+      "bodySha256": "33b07731353e0f75740b0402ded77166ffa06601cbf088593b2cdfb091274e1b"
+    },
+    {
+      "id": "neuroxess-news",
+      "url": "https://www.neuroxess.com/news/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.neuroxess.com/news/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 53162,
+      "entries": 0,
+      "titles": [
+        "新闻动态 &#8211; NeuroXess 脑虎科技"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:23:25.762Z",
+      "bodySha256": "c35a2fc97e5e2d79076886de5d339843c646a2cb00714df98a6507919cac7a02"
+    },
+    {
+      "id": "neuralink-sample",
+      "url": "https://neuralink.com/blog/pretraining-on-50000-hours/",
+      "kind": "article",
+      "status": 200,
+      "finalUrl": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+      "contentType": "text/html",
+      "bytes": 18859,
+      "entries": 0,
+      "titles": [
+        "Pretraining on 50,000 Hours of Unlabeled Brain Data | Updates | Neuralink"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:23:25.763Z",
+      "bodySha256": "f274f0c2fe8fd0022ff7ac3b82d94cc7c41ad53aa92b19d58074b525dc915728"
+    },
+    {
+      "id": "neuropace-rss",
+      "url": "https://investors.neuropace.com/rss/news-releases.xml",
+      "kind": "rss",
+      "status": 429,
+      "finalUrl": "https://investors.neuropace.com/rss/news-releases.xml",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 5690,
+      "entries": 0,
+      "titles": [
+        "Just a moment..."
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:23:25.764Z",
+      "bodySha256": "154bcd71845d7c2e56e77b6140413986ca77bcbf62366fccf4d73df3f9cea6a1"
+    },
+    {
+      "id": "europepmc-scoped",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22brain-computer+interface%22+OR+TITLE_ABS%3A%22brain-machine+interface%22%29+FIRST_PDATE%3A%5B*+TO+NOW%5D+sort_date%3Ay&format=json&resultType=core&pageSize=10",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22brain-computer+interface%22+OR+TITLE_ABS%3A%22brain-machine+interface%22%29+FIRST_PDATE%3A%5B*+TO+NOW%5D+sort_date%3Ay&format=json&resultType=core&pageSize=10",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 46202,
+      "entries": 10,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:25:11.439Z",
+      "total": 7620,
+      "samples": [
+        {
+          "id": "PPR1337041",
+          "source": "PPR",
+          "title": "Volitional control of a recurrent brain computer interface via covert reinforcement of endogenous reward networks",
+          "publishedAt": "2026-10-08"
+        },
+        {
+          "id": "PPR1334315",
+          "source": "PPR",
+          "title": "Magnetic Field–Enhanced Docosahexaenoic Acid Delivery for Acetylcholine Restoration in Alzheimer’s Disease: an In Silico Study",
+          "publishedAt": "2026-10-05"
+        }
+      ],
+      "bodySha256": "3297371a3f373978824649e8dd4f132a746d5810366b1dafa1771c1641e66e97"
+    },
+    {
+      "id": "precision-articles",
+      "url": "https://www.precisionneuro.io/articles",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.precisionneuro.io/articles",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 247784,
+      "entries": 0,
+      "titles": [
+        "News &amp; Insights | Precision"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:25:11.442Z",
+      "bodySha256": "2dd5cd774cc9a1d9e8803600c4d67f8a7730fb77119d37c977ce898d109410e5"
+    },
+    {
+      "id": "cas-brain-research",
+      "url": "https://cebsit.cas.cn/xwen/kyjz/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://cebsit.cas.cn/xwen/kyjz/",
+      "contentType": "text/html",
+      "bytes": 720,
+      "entries": 0,
+      "titles": [
+        "科研进展"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:25:11.443Z",
+      "bodySha256": "70e3e8fe02fd3b0dcf58a73f63407ca584bbd16aca4e11eefbeef509e4d64e47"
+    },
+    {
+      "id": "brainco-news",
+      "url": "https://www.brainco.cn/zh-CN/news/press-center",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.brainco.cn/news",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 131166,
+      "entries": 0,
+      "titles": [
+        "新闻资讯 - BrainCo强脑科技 | 脑机接口行业动态"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:25:11.446Z",
+      "bodySha256": "477ab0886173563b4885d5832767e7fdb91198be45b67ba7f47546050912245d"
+    },
+    {
+      "id": "neuropace-feed",
+      "url": "https://www.neuropace.com/feed/",
+      "kind": "rss",
+      "status": 403,
+      "finalUrl": "https://www.neuropace.com/feed/",
+      "contentType": "text/html",
+      "bytes": 118,
+      "entries": 0,
+      "titles": [
+        "403 Forbidden"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:30:50.780Z",
+      "bodySha256": "58bf2215b395dcac74c009aa98701854e43cbe54a1cd3a95fee6a647ca9910d4"
+    },
+    {
+      "id": "ieee-biomedical-feed",
+      "url": "https://spectrum.ieee.org/feeds/topic/biomedical.rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://spectrum.ieee.org/feeds/topic/biomedical.rss",
+      "contentType": "application/rss+xml; charset=utf-8",
+      "bytes": 311992,
+      "entries": 30,
+      "titles": [
+        "IEEE Spectrum",
+        "IEEE Spectrum",
+        "World’s First Fully Implanted Cochlear Implant Reaches Patients"
+      ],
+      "dates": [
+        "Wed, 30 Sep 2026 16:19:59 +0000",
+        "Tue, 29 Sep 2026 13:00:02 +0000",
+        "Thu, 24 Sep 2026 15:51:54 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:30:50.784Z",
+      "bodySha256": "0fb23a9ff3104dff7fed526485e040d4071ea411e4d02fd6a4593f3904316f87"
+    },
+    {
+      "id": "medtronic-news",
+      "url": "https://news.medtronic.com/news-releases",
+      "kind": "web_list",
+      "status": 404,
+      "finalUrl": "https://news.medtronic.com/news-releases",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 1000,
+      "entries": 0,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:30:50.787Z",
+      "bodySha256": "09f8db44636ab5f5907e50a4dfb32c71a2ae5e42dbc1f0a457b3e9b9e686704f"
+    },
+    {
+      "id": "nmpa-brain-guidance",
+      "url": "https://www.nmpa.gov.cn/xxgk/ggtg/qtggtg/20260710161511162.html",
+      "kind": "reference",
+      "status": 412,
+      "finalUrl": "https://www.nmpa.gov.cn/xxgk/ggtg/qtggtg/20260710161511162.html",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 2590,
+      "entries": 0,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:30:50.791Z",
+      "bodySha256": "ce00e46a8c98f1098b5780625d5e43854e0f7145273beb09be30461d9edec57e"
+    },
+    {
+      "id": "medtronic-home",
+      "url": "https://news.medtronic.com/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://news.medtronic.com/",
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 100838,
+      "entries": 0,
+      "titles": [
+        "Newsroom | Medtronic"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:31:56.783Z",
+      "bodySha256": "ce271227d0dd4507d13e930d61d5240dd9aefdf9fcbb3d2870062f4da5b0a7ea"
+    },
+    {
+      "id": "cas-brain-2026",
+      "url": "https://cebsit.cas.cn/xwen/kyjz/2026/",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://cebsit.cas.cn/xwen/kyjz/2026/",
+      "contentType": "text/html",
+      "bytes": 45742,
+      "entries": 0,
+      "titles": [
+        "2026年----中国科学院脑科学与智能技术卓越创新中心"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:35:11.157Z",
+      "bodySha256": "90d1be62ed10d4e85af2c23053408352294379e9fffdb47a2ed20479b05d7ce0"
+    },
+    {
+      "id": "neuroxess-feed",
+      "url": "https://www.neuroxess.com/feed/",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://www.neuroxess.com/feed/",
+      "contentType": "application/rss+xml; charset=UTF-8",
+      "bytes": 1850,
+      "entries": 1,
+      "titles": [
+        "NeuroXess 脑虎科技",
+        "NeuroXess 脑虎科技",
+        "世界，您好！"
+      ],
+      "dates": [
+        "Fri, 24 Apr 2026 09:52:59 +0000"
+      ],
+      "checkedAt": "2026-10-12T08:35:11.160Z",
+      "bodySha256": "b7478bb09e9c897d8be354a4197d3486e1971bafa1642ac1d7a67fe2dede3c03"
+    },
+    {
+      "id": "medtronic-rss",
+      "url": "https://news.medtronic.com/press-releases?pagetemplate=rss",
+      "kind": "rss",
+      "status": 200,
+      "finalUrl": "https://news.medtronic.com/press-releases?pagetemplate=rss",
+      "contentType": "text/xml; charset=UTF-8",
+      "bytes": 2833,
+      "entries": 5,
+      "titles": [
+        "Press releases | Medtronic",
+        "Medtronic Announces Final Exchange Ratio of 4.5939 in Split-Off of MiniMed Group, Inc.",
+        "Medtronic Receives Category I CPT® Code Approvals for Altaviva™ and Symplicity Spyral™ Systems"
+      ],
+      "dates": [
+        "Wed, 07 Oct 2026 17:31:00 -0400",
+        "Thu, 01 Oct 2026 16:00:00 -0400",
+        "Wed, 30 Sep 2026 09:00:00 -0400"
+      ],
+      "checkedAt": "2026-10-12T08:35:11.162Z",
+      "bodySha256": "cbd004d482e98775353ae2f48d9742edab567d3d9054181c867c8950fbc3a57e"
+    },
+    {
+      "id": "europepmc-med",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22brain-computer+interface%22+OR+TITLE_ABS%3A%22brain-machine+interface%22%29+SRC%3AMED+FIRST_PDATE%3A%5B*+TO+NOW%5D+sort_date%3Ay&format=json&resultType=core&pageSize=20",
+      "kind": "json_list",
+      "status": 200,
+      "finalUrl": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22brain-computer+interface%22+OR+TITLE_ABS%3A%22brain-machine+interface%22%29+SRC%3AMED+FIRST_PDATE%3A%5B*+TO+NOW%5D+sort_date%3Ay&format=json&resultType=core&pageSize=20",
+      "contentType": "application/json;charset=UTF-8",
+      "bytes": 121128,
+      "entries": 20,
+      "titles": [],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:37:21.445Z",
+      "total": 6915,
+      "samples": [
+        {
+          "id": "42821728",
+          "source": "MED",
+          "title": "Generative Enhancement of Noninvasive Datasets for Motor Brain-Computer Interface by Synthesizing Task-Relevant Neural Signals.",
+          "publishedAt": "2026-10-01"
+        },
+        {
+          "id": "42821610",
+          "source": "MED",
+          "title": "Near-optimal P300 speller performance using large language models: A multi-model analysis with performance bounds.",
+          "publishedAt": "2026-10-01"
+        }
+      ],
+      "bodySha256": "7eb9be29deb1f9cdd457c785e4163a66d23a4512917f5c19845c31a9dad7e49f"
+    },
+    {
+      "id": "precision-company-news",
+      "url": "https://www.precisionneuro.io/articles/company-news",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.precisionneuro.io/articles/company-news",
+      "contentType": "text/html; charset=utf-8",
+      "bytes": 107031,
+      "entries": 0,
+      "titles": [
+        "Company News | Precision"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:42:23.995Z",
+      "bodySha256": "3fbe74dde1cae3e9b03446f7a552fc32c35785da3e54f48868392fd2e0eaccb6"
+    },
+    {
+      "id": "intel-neuromorphic",
+      "url": "https://newsroom.intel.com/category/neuromorphic-computing",
+      "kind": "web_list",
+      "status": 200,
+      "finalUrl": "https://www.intel.com/content/www/us/en/newsroom/home.html",
+      "contentType": "text/html;charset=utf-8",
+      "bytes": 551569,
+      "entries": 0,
+      "titles": [
+        "Intel Newsroom | News and Information",
+        "California Consumer Privacy Act (CCPA) Opt-Out Icon"
+      ],
+      "dates": [],
+      "checkedAt": "2026-10-12T08:42:24.001Z",
+      "bodySha256": "02d711fa8471faa06fd49a64ff04e0a4ba92e34f0b710235e8b7aa9648505420"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "bci-nature-bmi",
+      "probeId": "nature-bmi",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        8
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-jne-feed",
+      "probeId": "jne-feed",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        8
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-neurochip-journal",
+      "probeId": "neurochip-journal",
+      "categories": [
+        6,
+        7,
+        8
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-arxiv-qbio",
+      "probeId": "arxiv-qbio",
+      "categories": [
+        2,
+        7,
+        8
+      ],
+      "priority": "P1",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-arxiv-csne",
+      "probeId": "arxiv-csne",
+      "categories": [
+        6,
+        7,
+        8
+      ],
+      "priority": "P1",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-biorxiv-neuro",
+      "probeId": "biorxiv-neuro",
+      "categories": [
+        2,
+        3,
+        7,
+        8
+      ],
+      "priority": "P1",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-medrxiv-neurology",
+      "probeId": "medrxiv-neurology",
+      "categories": [
+        3,
+        4,
+        8
+      ],
+      "priority": "P1",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-gtec-feed",
+      "probeId": "gtec-feed",
+      "categories": [
+        1,
+        3,
+        4,
+        5,
+        9,
+        10
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-brainproducts-feed",
+      "probeId": "brainproducts-feed",
+      "categories": [
+        1,
+        2,
+        10
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-artinis-rss",
+      "probeId": "artinis-rss",
+      "categories": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-braingate-feed",
+      "probeId": "braingate-feed",
+      "categories": [
+        2,
+        4,
+        9
+      ],
+      "priority": "P0",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-ieee-biomedical-feed",
+      "probeId": "ieee-biomedical-feed",
+      "categories": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        9
+      ],
+      "priority": "P1",
+      "notes": "仅列表核验；详情、正文补齐和实际服务器连通性待核验"
+    },
+    {
+      "id": "bci-europepmc-med",
+      "probeId": "europepmc-med",
+      "categories": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        7,
+        8
+      ],
+      "priority": "P0",
+      "notes": "仅 MED 索引；FIRST_PDATE 排除尚未到达的刊期；论文发表不代表临床验证"
+    },
+    {
+      "id": "bci-neuralink-updates",
+      "probeId": "neuralink-updates",
+      "categories": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "priority": "P0",
+      "notes": "原始 HTML 内有 blogPosts JSON，沿用现有 html_json_key；摘要不冒充全文"
+    },
+    {
+      "id": "bci-neuroxess-news",
+      "probeId": "neuroxess-news",
+      "categories": [
+        1,
+        2,
+        4,
+        5,
+        9
+      ],
+      "priority": "P0",
+      "notes": "用实际卡片标题和日期，避免把摘要与日期并入标题"
+    },
+    {
+      "id": "bci-cas-brain-2026",
+      "probeId": "cas-brain-2026",
+      "categories": [
+        2,
+        3,
+        7,
+        8
+      ],
+      "priority": "P0",
+      "notes": "该网站栏目通过 JS 跳向年度目录；当前固定 2026，跨年必须人工复查"
+    },
+    {
+      "id": "bci-paradromics-news",
+      "probeId": "paradromics-news",
+      "categories": [
+        1,
+        2,
+        4,
+        9
+      ],
+      "priority": "P0",
+      "notes": "只收公司本域名公告，排除混合媒体报道；纯日期表示发表日，不补成事件发生日"
+    },
+    {
+      "id": "bci-mne-api",
+      "probeId": "mne-api",
+      "categories": [
+        2,
+        10
+      ],
+      "priority": "P0",
+      "notes": "GitHub Atom 本轮读取失败；官方 Releases JSON 可读；仅 release 更新，不跟踪每次提交"
+    },
+    {
+      "id": "bci-moabb-api",
+      "probeId": "moabb-api",
+      "categories": [
+        2,
+        8,
+        10
+      ],
+      "priority": "P0",
+      "notes": "GitHub Atom 本轮读取失败；官方 Releases JSON 可读；仅 release 更新，不跟踪每次提交"
+    },
+    {
+      "id": "bci-braindecode-api",
+      "probeId": "braindecode-api",
+      "categories": [
+        2,
+        10
+      ],
+      "priority": "P0",
+      "notes": "GitHub Atom 本轮读取失败；官方 Releases JSON 可读；仅 release 更新，不跟踪每次提交"
+    },
+    {
+      "id": "bci-brainflow-api",
+      "probeId": "brainflow-api",
+      "categories": [
+        1,
+        2,
+        10
+      ],
+      "priority": "P0",
+      "notes": "GitHub Atom 本轮读取失败；官方 Releases JSON 可读；仅 release 更新，不跟踪每次提交"
+    }
+  ],
+  "listingVerification": {
+    "checkedAt": "2026-10-12",
+    "total": 21,
+    "passed": 21,
+    "phase": "public-list parsing only"
+  }
+}

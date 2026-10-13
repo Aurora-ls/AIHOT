@@ -1,0 +1,510 @@
+{
+  "date": "2026-10-12",
+  "scope": "listing parser only; no database writes, model, paid requests, or detail verification",
+  "results": [
+    {
+      "id": "bci-nature-bmi",
+      "checkedAt": "2026-10-12T08:46:46.830Z",
+      "ok": true,
+      "count": 30,
+      "dated": 30,
+      "samples": [
+        {
+          "title": "Detangling spinal respiratory network responses to cervical epidural stimulation after spinal cord injury",
+          "url": "https://www.nature.com/articles/s42003-026-11066-2",
+          "publishedAt": "2026-09-28T00:00:00.000Z"
+        },
+        {
+          "title": "Assistive algorithms influence neural representations in motor brain-computer interfaces",
+          "url": "https://www.nature.com/articles/s41467-026-76109-y",
+          "publishedAt": "2026-09-15T00:00:00.000Z"
+        },
+        {
+          "title": "Simultaneous speech and gesture decoding for multimodal communication in paralysis",
+          "url": "https://www.nature.com/articles/s41593-026-02446-2",
+          "publishedAt": "2026-09-14T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-jne-feed",
+      "checkedAt": "2026-10-12T08:46:46.842Z",
+      "ok": true,
+      "count": 10,
+      "dated": 10,
+      "samples": [
+        {
+          "title": "Neural coupling between spinal motor neurons of the first dorsal interosseous muscle during individual index finger flexion and pinch tasks",
+          "url": "https://iopscience.iop.org/article/10.1088/1741-2552/aea59d",
+          "publishedAt": "2026-10-08T23:00:00.000Z"
+        },
+        {
+          "title": "The challenge of out-of-distribution detection in motor imagery BCIs",
+          "url": "https://iopscience.iop.org/article/10.1088/1741-2552/aeac87",
+          "publishedAt": "2026-10-08T23:00:00.000Z"
+        },
+        {
+          "title": "Harmonizing complexity and efficiency: Helix Fusion HarmonyNet’s breakthrough in EEG-based postoperative delirium recognition",
+          "url": "https://iopscience.iop.org/article/10.1088/1741-2552/aea18f",
+          "publishedAt": "2026-10-07T23:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-neurochip-journal",
+      "checkedAt": "2026-10-12T08:46:46.843Z",
+      "ok": true,
+      "count": 10,
+      "dated": 10,
+      "samples": [
+        {
+          "title": "Modular memristor model with synaptic-like plasticity and volatile memory",
+          "url": "https://iopscience.iop.org/article/10.1088/2634-4386/aeaa7e",
+          "publishedAt": "2026-10-07T23:00:00.000Z"
+        },
+        {
+          "title": "Event-driven eligibility propagation in large sparse networks",
+          "url": "https://iopscience.iop.org/article/10.1088/2634-4386/ae96d1",
+          "publishedAt": "2026-09-27T23:00:00.000Z"
+        },
+        {
+          "title": "A closer-to-brain heterosynaptic learning rule for spatiotemporal spike pattern detection with low-resolution synapse",
+          "url": "https://iopscience.iop.org/article/10.1088/2634-4386/aea01b",
+          "publishedAt": "2026-09-24T23:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-arxiv-qbio",
+      "checkedAt": "2026-10-12T08:46:46.843Z",
+      "ok": true,
+      "count": 7,
+      "dated": 7,
+      "samples": [
+        {
+          "title": "FlyHack: Stress-Testing Mechanistic Claims in a Connectome-Constrained Visual Model",
+          "url": "https://arxiv.org/abs/2610.13018",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        },
+        {
+          "title": "Excitability across scales: a unifying EI model",
+          "url": "https://arxiv.org/abs/2610.13275",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        },
+        {
+          "title": "Beyond Anxiety and Avoidance: A Dynamic Feedback-Regulation Framework for Adult Romantic Attachment",
+          "url": "https://arxiv.org/abs/2610.13312",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-arxiv-csne",
+      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "ok": true,
+      "count": 12,
+      "dated": 12,
+      "samples": [
+        {
+          "title": "Neuromorphic Satellite Intelligence: A Formal Framework for Event-Driven Architectures, Spike-Based Algorithms, and Quantitative Energy-Accuracy Trade-offs",
+          "url": "https://arxiv.org/abs/2610.12471",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        },
+        {
+          "title": "Energy-Efficient Spiking Neural Networks for Sensing-Aided Beam Prediction",
+          "url": "https://arxiv.org/abs/2610.12507",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        },
+        {
+          "title": "REMBGO for Evaluation-Limited Optimization: CEC2022 Benchmarking and EAF-STATCOM Generalization",
+          "url": "https://arxiv.org/abs/2610.13471",
+          "publishedAt": "2026-10-12T04:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-biorxiv-neuro",
+      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "ok": true,
+      "count": 30,
+      "dated": 30,
+      "samples": [
+        {
+          "title": "Absence of the Earths magnetic field activates stress-related brain circuits in a mammal",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756554v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "title": "When Time Online Tells Us Little: Duration of Social Media Use does not Influence Sleep Disruption or Psychopathology in Adolescents",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756572v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "title": "NREM sleep microarchitecture is associated with internalizing symptoms and emotional functioning in early adolescence",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756568v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-medrxiv-neurology",
+      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "ok": true,
+      "count": 30,
+      "dated": 30,
+      "samples": [
+        {
+          "title": "Static and dynamic noise abolish altruistic biases in Parkinson's disease independent of deep brain stimulation",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365079v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "title": "Full stack academic publishing in seizures with artificial intelligence: a cautionary tale",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26363237v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        },
+        {
+          "title": "Low-Dose Tenecteplase for Acute Ischemic Stroke Treatment in Aging Patients DATE-AGING Trial: Rationale and Design",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26361416v1?rss=1",
+          "publishedAt": "2026-10-11T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-gtec-feed",
+      "checkedAt": "2026-10-12T08:46:50.698Z",
+      "ok": true,
+      "count": 15,
+      "dated": 15,
+      "samples": [
+        {
+          "title": "Multimodal EEG, Eye Tracking, ECG & GSR for Flight Simulation Research",
+          "url": "https://www.gtec.at/2026/07/20/multimodal-flight-simulation-recording/",
+          "publishedAt": "2026-07-20T12:14:50.000Z"
+        },
+        {
+          "title": "Why Ultra-High-Density EEG Is Changing Brain Mapping | 64 vs 256 vs 512 vs 1024 EEG Channels",
+          "url": "https://www.gtec.at/2026/07/08/why-ultra-high-density-eeg-changes-brain-mapping/",
+          "publishedAt": "2026-07-08T13:10:27.000Z"
+        },
+        {
+          "title": "Brain and Body Monitoring: Combining EEG with Physiological Signals for Human Performance Research",
+          "url": "https://www.gtec.at/2026/07/06/brain-body-monitoring-eeg-physiological-signals/",
+          "publishedAt": "2026-07-06T14:11:32.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-brainproducts-feed",
+      "checkedAt": "2026-10-12T08:46:58.008Z",
+      "ok": true,
+      "count": 10,
+      "dated": 10,
+      "samples": [
+        {
+          "title": "Discover the latest updates in BrainVision Analyzer 2.3.2",
+          "url": "https://pressrelease.brainproducts.com/latest-updates-in-analyzer-232/",
+          "publishedAt": "2026-08-28T12:56:19.000Z"
+        },
+        {
+          "title": "Brain Products at OHBM 2026: Advancing EEG Research Through Innovation, Collaboration, and Knowledge Sharing",
+          "url": "https://pressrelease.brainproducts.com/advancing-eeg-research-through-innovation-collaboration-and-knowledge-sharing/",
+          "publishedAt": "2026-08-28T12:55:37.000Z"
+        },
+        {
+          "title": "Brain Products MoBI Award 2026: And the winners are …",
+          "url": "https://pressrelease.brainproducts.com/mobi2026-winners/",
+          "publishedAt": "2026-08-28T12:54:12.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-artinis-rss",
+      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "ok": true,
+      "count": 20,
+      "dated": 20,
+      "samples": [
+        {
+          "title": "UX Design for Brite Connect Ultra: Making Large-Scale Hyperscanning Truly Scalable",
+          "url": "https://artinis.com/blogpost-all/brite-connect-ultra-large-scale-hyperscanning-ux",
+          "publishedAt": "2026-03-31T14:32:20.000Z"
+        },
+        {
+          "title": "Measuring brain signals in real-time: the potential of using wearable fNIRS in Brain-Computer Interface (BCI)",
+          "url": "https://artinis.com/blogpost-all/fnirs-in-brain-computer-interface-and-neurofeedback",
+          "publishedAt": "2026-02-06T10:30:00.000Z"
+        },
+        {
+          "title": "The power of portability — Using fNIRS in Naturalistic Settings",
+          "url": "https://artinis.com/blogpost-all/fnirs-studies-in-naturalistic-settings",
+          "publishedAt": "2026-01-07T13:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-braingate-feed",
+      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "ok": true,
+      "count": 10,
+      "dated": 10,
+      "samples": [
+        {
+          "title": "Brown Publication Sheds Light on Mirror Neurons",
+          "url": "https://www.braingate.org/new-brown-u-publication-sheds-light-on-mirror-neurons/",
+          "publishedAt": "2026-09-23T18:55:59.000Z"
+        },
+        {
+          "title": "BrainGate Covered by Washington Post",
+          "url": "https://www.braingate.org/braingate-covered-by-washington-post/",
+          "publishedAt": "2026-06-17T12:36:27.000Z"
+        },
+        {
+          "title": "Rice University and Baylor College of Medicine join BrainGate consortium",
+          "url": "https://www.braingate.org/rice-university-and-baylor-college-of-medicine-join-braingate-consortium/",
+          "publishedAt": "2026-05-28T14:48:20.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-ieee-biomedical-feed",
+      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "ok": true,
+      "count": 30,
+      "dated": 30,
+      "samples": [
+        {
+          "title": "World’s First Fully Implanted Cochlear Implant Reaches Patients",
+          "url": "https://spectrum.ieee.org/fully-implantable-cochlear-implant",
+          "publishedAt": "2026-09-30T16:19:59.000Z"
+        },
+        {
+          "title": "Tech to Replace Animal Testing Is Almost Ready. Scientists Are Not",
+          "url": "https://spectrum.ieee.org/alternatives-to-animal-testing",
+          "publishedAt": "2026-09-29T13:00:02.000Z"
+        },
+        {
+          "title": "Lab on a Contact Lens Can Measure Stress Through Serotonin",
+          "url": "https://spectrum.ieee.org/serotonin-stress-smart-contact-lens",
+          "publishedAt": "2026-09-24T15:51:54.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-europepmc-med",
+      "checkedAt": "2026-10-12T08:47:01.912Z",
+      "ok": true,
+      "count": 20,
+      "dated": 20,
+      "samples": [
+        {
+          "title": "Generative Enhancement of Noninvasive Datasets for Motor Brain-Computer Interface by Synthesizing Task-Relevant Neural Signals.",
+          "url": "https://europepmc.org/article/MED/42821728",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        },
+        {
+          "title": "Near-optimal P300 speller performance using large language models: A multi-model analysis with performance bounds.",
+          "url": "https://europepmc.org/article/MED/42821610",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        },
+        {
+          "title": "Advancing Nursing Cognitive Capacity Through Generative AI and Immersive VR as a Structural Intervention for Burnout and Administrative Burden.",
+          "url": "https://europepmc.org/article/MED/42659607",
+          "publishedAt": "2026-10-01T00:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-neuralink-updates",
+      "checkedAt": "2026-10-12T08:47:01.914Z",
+      "ok": true,
+      "count": 27,
+      "dated": 27,
+      "samples": [
+        {
+          "title": "Pretraining on 50,000 Hours of Unlabeled Brain Data",
+          "url": "https://neuralink.com/updates/pretraining-on-50000-hours/",
+          "publishedAt": "2026-10-01T19:00:00.000Z"
+        },
+        {
+          "title": "Two Years of Telepathy",
+          "url": "https://neuralink.com/updates/two-years-of-telepathy/",
+          "publishedAt": "2026-01-27T23:51:57.588Z"
+        },
+        {
+          "title": "Welcome, David McMullen!",
+          "url": "https://neuralink.com/updates/welcome-david-mcmullen/",
+          "publishedAt": "2025-12-09T21:26:57.651Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-neuroxess-news",
+      "checkedAt": "2026-10-12T08:47:01.914Z",
+      "ok": true,
+      "count": 6,
+      "dated": 6,
+      "samples": [
+        {
+          "title": "脑虎科技披露“三全”脑机接口最新进展：从“所想即所得”到“所见即所得”",
+          "url": "https://www.neuroxess.com/news/naohukejipilusanquannaojijiekouzuixinjinzhancongsuoxiangjisuodedaosuojianjisuoa/",
+          "publishedAt": "2026-09-29T16:00:00.000Z"
+        },
+        {
+          "title": "国内首款！脑虎科技自研硬膜下植入式柔性脑机接口进入“绿色通道”",
+          "url": "https://www.neuroxess.com/news/guoneishoukuannaohukejiziyanyingmoxiazhirushirouxingnaojijiekoujinrulusetongdao/",
+          "publishedAt": "2026-07-26T16:00:00.000Z"
+        },
+        {
+          "title": "脑虎科技“三全”脑机接口系统正式启动GCP注册临床试验",
+          "url": "https://www.neuroxess.com/news/naohukejisanquannaojijiekouxitongzhengshiqidonggcpzhucelinchuangshiyan/",
+          "publishedAt": "2026-07-07T16:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-cas-brain-2026",
+      "checkedAt": "2026-10-12T08:47:01.915Z",
+      "ok": true,
+      "count": 15,
+      "dated": 15,
+      "samples": [
+        {
+          "title": "脑智卓越中心汪菲组揭示控制雄蝇交配行为的关键感觉反馈神经机制",
+          "url": "https://cebsit.cas.cn/xwen/kyjz/2026/202609/t20260920_8285110.html",
+          "publishedAt": "2026-09-20T05:06:46.000Z"
+        },
+        {
+          "title": "脑智卓越中心揭示PRRT2调控钠通道慢失活及维持皮层神经网络稳定性的作用",
+          "url": "https://cebsit.cas.cn/xwen/kyjz/2026/202609/t20260914_8281417.html",
+          "publishedAt": "2026-09-14T06:05:54.000Z"
+        },
+        {
+          "title": "脑智卓越中心合作开发Epi-Allele等位基因重塑策略，为显性遗传病治疗提供新思路",
+          "url": "https://cebsit.cas.cn/xwen/kyjz/2026/202609/t20260904_8278749.html",
+          "publishedAt": "2026-09-04T09:29:31.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-paradromics-news",
+      "checkedAt": "2026-10-12T08:47:03.337Z",
+      "ok": true,
+      "count": 5,
+      "dated": 5,
+      "samples": [
+        {
+          "title": "Paradromics Achieves Real-Time Speech with Connexus® Brain-Computer Interface",
+          "url": "https://paradromics.com/news/paradromics-achieves-real-time-speech-connexus-brain-computer-interface/",
+          "publishedAt": "2026-09-14T05:00:00.000Z"
+        },
+        {
+          "title": "Paradromics Demonstrates Four Years of Stable Neural Recording in Major Brain-Computer Interface Durability Milestone",
+          "url": "https://paradromics.com/news/paradromics-demonstrates-four-years-of-stable-neural-recording-in-major-brain-computer-interface-durability-milestone/",
+          "publishedAt": "2026-10-08T05:00:00.000Z"
+        },
+        {
+          "title": "Paradromics Receives FDA Approval to Expand BCI Access to Personal Computing Devices in Connect-One™ Clinical Study",
+          "url": "https://paradromics.com/news/paradromics-receives-fda-approval-to-expand-bci-access-to-personal-computing-devices-in-connect-one-clinical-study/",
+          "publishedAt": "2026-08-26T05:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-mne-api",
+      "checkedAt": "2026-10-12T08:47:03.337Z",
+      "ok": true,
+      "count": 5,
+      "dated": 5,
+      "samples": [
+        {
+          "title": "v1.13.2",
+          "url": "https://github.com/mne-tools/mne-python/releases/tag/v1.13.2",
+          "publishedAt": "2026-09-11T16:34:07.000Z"
+        },
+        {
+          "title": "v1.13.1",
+          "url": "https://github.com/mne-tools/mne-python/releases/tag/v1.13.1",
+          "publishedAt": "2026-09-11T15:35:36.000Z"
+        },
+        {
+          "title": "v1.13.0",
+          "url": "https://github.com/mne-tools/mne-python/releases/tag/v1.13.0",
+          "publishedAt": "2026-09-09T17:01:18.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-moabb-api",
+      "checkedAt": "2026-10-12T08:47:03.338Z",
+      "ok": true,
+      "count": 5,
+      "dated": 5,
+      "samples": [
+        {
+          "title": "v1.7.2",
+          "url": "https://github.com/NeuroTechX/moabb/releases/tag/v1.7.2",
+          "publishedAt": "2026-09-14T12:47:44.000Z"
+        },
+        {
+          "title": "v1.7.1",
+          "url": "https://github.com/NeuroTechX/moabb/releases/tag/v1.7.1",
+          "publishedAt": "2026-08-31T21:34:54.000Z"
+        },
+        {
+          "title": "v1.7.0",
+          "url": "https://github.com/NeuroTechX/moabb/releases/tag/v1.7.0",
+          "publishedAt": "2026-08-31T16:47:03.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-braindecode-api",
+      "checkedAt": "2026-10-12T08:47:03.338Z",
+      "ok": true,
+      "count": 5,
+      "dated": 5,
+      "samples": [
+        {
+          "title": "braindecode 1.8.1",
+          "url": "https://github.com/braindecode/braindecode/releases/tag/v1.8.1",
+          "publishedAt": "2026-08-31T14:23:41.000Z"
+        },
+        {
+          "title": "braindecode 1.8.0",
+          "url": "https://github.com/braindecode/braindecode/releases/tag/v1.8.0",
+          "publishedAt": "2026-08-31T12:50:53.000Z"
+        },
+        {
+          "title": "braindecode 1.7.0",
+          "url": "https://github.com/braindecode/braindecode/releases/tag/v1.7.0",
+          "publishedAt": "2026-08-01T09:37:48.000Z"
+        }
+      ]
+    },
+    {
+      "id": "bci-brainflow-api",
+      "checkedAt": "2026-10-12T08:47:05.085Z",
+      "ok": true,
+      "count": 5,
+      "dated": 5,
+      "samples": [
+        {
+          "title": "5.23.0",
+          "url": "https://github.com/brainflow-dev/brainflow/releases/tag/5.23.0",
+          "publishedAt": "2026-09-26T09:04:30.000Z"
+        },
+        {
+          "title": "5.22.2",
+          "url": "https://github.com/brainflow-dev/brainflow/releases/tag/5.22.2",
+          "publishedAt": "2026-05-22T22:24:01.000Z"
+        },
+        {
+          "title": "5.22.1",
+          "url": "https://github.com/brainflow-dev/brainflow/releases/tag/5.22.1",
+          "publishedAt": "2026-05-18T18:53:07.000Z"
+        }
+      ]
+    }
+  ]
+}
