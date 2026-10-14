@@ -115,19 +115,19 @@ test("promotions a feed rotates inside its posts are left out of the body", () =
 test("a listing that links other articles in its teasers takes only the links that begin a line", () => {
   // Axios Technology through Jina: each headline stands on its own line; its teaser links older stories inline.
   const md = [
-    "### [Amodei critics target Trump with hit piece before White House dinner](https://example.org/2026/09/27/amodei)",
+    "### [Neuralink trial update draws questions about participant follow-up](https://example.org/2026/09/27/neuralink)",
     "[![Image 3: Scoop](https://example.org/a.jpg)](https://example.org/2026/09/27/dinner)",
-    "[Scoop: Anthropic's Dario Amodei to have White House dinner](https://example.org/2026/09/27/dinner)",
-    "[How Ed Sheeran's U.S. tour went off the rails in 3 weeks](https://example.org/2026/09/25/sheeran)[![Image 12: Ed Sheeran](https://example.org/b.jpg)](https://example.org/2026/09/25/sheeran)",
-    "Ed Sheeran's two Gillette Stadium shows were canceled Friday, capping a [chaotic three weeks](https://example.org/2026/09/15/sheeran-loop).",
-    "**Why it matters:** AI is energy-hungry. [Political divides](https://example.org/2026/09/24/climate-politics) can slow progress.",
-    "[Go deeper (3 min. read)](https://example.org/2026/09/25/sheeran)",
+    "[Scoop: BrainGate reports a new participant study](https://example.org/2026/09/27/study)",
+    "[How EEG channel count changes BCI setup time](https://example.org/2026/09/25/eeg-channels)[![Image 12: EEG montage](https://example.org/b.jpg)](https://example.org/2026/09/25/eeg-channels)",
+    "The study compares two EEG montages; the [protocol](https://example.org/2026/09/15/protocol) defines the task conditions.",
+    "**Why it matters:** channel count affects setup time and portability. [The study methods](https://example.org/2026/09/24/methods) describe the comparison.",
+    "[Go deeper (3 min. read)](https://example.org/2026/09/25/eeg-channels)",
   ].join("\n\n");
   const config = { url: "https://r.jina.ai/https://example.org/technology", allowUrlPrefixes: ["https://example.org/2"], linksStartLine: true };
   assert.deepEqual(fromMarkdown(md, "https://example.org", source(config)).map((c) => c.title), [
-    "Amodei critics target Trump with hit piece before White House dinner",
-    "Scoop: Anthropic's Dario Amodei to have White House dinner",
-    "How Ed Sheeran's U.S. tour went off the rails in 3 weeks",
+    "Neuralink trial update draws questions about participant follow-up",
+    "Scoop: BrainGate reports a new participant study",
+    "How EEG channel count changes BCI setup time",
   ]);
   assert.equal(fromMarkdown(md, "https://example.org", source({ ...config, linksStartLine: undefined })).length, 5, "without the option prose links count");
 });
@@ -178,10 +178,10 @@ test("hidden page parts are dropped whole, and a news page's closing blocks are 
 });
 
 test("noise words match whatever their case", () => {
-  // 笔记本 is noise, but the lower-case exemption agent keeps a post about an Agent product.
-  const source = { config: { ingestNoiseFilter: { dropMarkers: ["笔记本", "iphone"], keepIfMatches: ["agent"] } } } as never;
+  // A laptop mention is noise, but an explicit BCI signal keeps a post about an acquisition device.
+  const source = { config: { ingestNoiseFilter: { dropMarkers: ["笔记本", "iphone"], keepIfMatches: ["bci"] } } } as never;
   const c = (title: string, excerpt: string) => ({ url: "https://example.org/a", title, excerpt }) as never;
-  assert.equal(noiseFiltered(c("Manus：正组建团队开发面向国内市场的产品", "与笔记本厂商合作的 Agent 产品"), source), false);
+  assert.equal(noiseFiltered(c("研究团队推出 EEG 采集软件", "与笔记本厂商合作的 BCI 采集设备"), source), false);
   assert.equal(noiseFiltered(c("新款笔记本开售", "首发价 4999 元"), source), true);
   assert.equal(noiseFiltered(c("iPhone 18 开售", ""), source), true);
 });

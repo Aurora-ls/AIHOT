@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-12",
+  "date": "2026-10-13",
   "scope": "listing parser only; no database writes, model, paid requests, or detail verification",
   "results": [
     {
       "id": "bci-nature-bmi",
-      "checkedAt": "2026-10-12T08:46:46.830Z",
+      "checkedAt": "2026-10-13T02:34:27.950Z",
       "ok": true,
       "count": 30,
       "dated": 30,
@@ -28,7 +28,7 @@
     },
     {
       "id": "bci-jne-feed",
-      "checkedAt": "2026-10-12T08:46:46.842Z",
+      "checkedAt": "2026-10-13T02:34:27.956Z",
       "ok": true,
       "count": 10,
       "dated": 10,
@@ -52,11 +52,16 @@
     },
     {
       "id": "bci-neurochip-journal",
-      "checkedAt": "2026-10-12T08:46:46.843Z",
+      "checkedAt": "2026-10-13T02:34:27.956Z",
       "ok": true,
       "count": 10,
       "dated": 10,
       "samples": [
+        {
+          "title": "Continuous attribution on discrete spikes: revealing the explainability paradox in spiking neural networks",
+          "url": "https://iopscience.iop.org/article/10.1088/2634-4386/aeae68",
+          "publishedAt": "2026-10-11T23:00:00.000Z"
+        },
         {
           "title": "Modular memristor model with synaptic-like plasticity and volatile memory",
           "url": "https://iopscience.iop.org/article/10.1088/2634-4386/aeaa7e",
@@ -66,17 +71,12 @@
           "title": "Event-driven eligibility propagation in large sparse networks",
           "url": "https://iopscience.iop.org/article/10.1088/2634-4386/ae96d1",
           "publishedAt": "2026-09-27T23:00:00.000Z"
-        },
-        {
-          "title": "A closer-to-brain heterosynaptic learning rule for spatiotemporal spike pattern detection with low-resolution synapse",
-          "url": "https://iopscience.iop.org/article/10.1088/2634-4386/aea01b",
-          "publishedAt": "2026-09-24T23:00:00.000Z"
         }
       ]
     },
     {
       "id": "bci-arxiv-qbio",
-      "checkedAt": "2026-10-12T08:46:46.843Z",
+      "checkedAt": "2026-10-13T02:34:27.956Z",
       "ok": true,
       "count": 7,
       "dated": 7,
@@ -100,7 +100,7 @@
     },
     {
       "id": "bci-arxiv-csne",
-      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "checkedAt": "2026-10-13T02:34:29.228Z",
       "ok": true,
       "count": 12,
       "dated": 12,
@@ -124,55 +124,55 @@
     },
     {
       "id": "bci-biorxiv-neuro",
-      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "checkedAt": "2026-10-13T02:34:29.228Z",
       "ok": true,
       "count": 30,
       "dated": 30,
       "samples": [
         {
-          "title": "Absence of the Earths magnetic field activates stress-related brain circuits in a mammal",
-          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756554v1?rss=1",
-          "publishedAt": "2026-10-11T00:00:00.000Z"
+          "title": "What EEG doesn't see: a whole-brain MEG map of sleep spindles and slow oscillations",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.09.758064v1?rss=1",
+          "publishedAt": "2026-10-12T00:00:00.000Z"
         },
         {
-          "title": "When Time Online Tells Us Little: Duration of Social Media Use does not Influence Sleep Disruption or Psychopathology in Adolescents",
-          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756572v1?rss=1",
-          "publishedAt": "2026-10-11T00:00:00.000Z"
+          "title": "A rapid, genetically-tractable human iPSC-derived model for studying tissue-resident macrophage biology in Alzheimer's and other diseases",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.08.757653v1?rss=1",
+          "publishedAt": "2026-10-12T00:00:00.000Z"
         },
         {
-          "title": "NREM sleep microarchitecture is associated with internalizing symptoms and emotional functioning in early adolescence",
-          "url": "https://www.biorxiv.org/content/10.64898/2026.10.04.756568v1?rss=1",
-          "publishedAt": "2026-10-11T00:00:00.000Z"
+          "title": "Intranasal L-MYC Neural Stem Cells Restore Neurovascular and Neuroimmune Homeostasis After TBI via CX3CL1 Upregulation and ICAM-1 Downregulation",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.10.09.756809v1?rss=1",
+          "publishedAt": "2026-10-12T00:00:00.000Z"
         }
       ]
     },
     {
       "id": "bci-medrxiv-neurology",
-      "checkedAt": "2026-10-12T08:46:50.697Z",
+      "checkedAt": "2026-10-13T02:34:29.228Z",
       "ok": true,
       "count": 30,
       "dated": 30,
       "samples": [
         {
+          "title": "Attenuated alpha state transitions and disrupted repetition-dependent temporal adaptation in mild cognitive impairment",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.10.10.26365211v1?rss=1",
+          "publishedAt": "2026-10-12T00:00:00.000Z"
+        },
+        {
+          "title": "Stroke Care in Rural Kenya: The Gap Between Clinical Practice and Stroke Care Guidelines in Kiambu County, Kenya",
+          "url": "https://www.medrxiv.org/content/10.64898/2026.10.09.26365112v1?rss=1",
+          "publishedAt": "2026-10-12T00:00:00.000Z"
+        },
+        {
           "title": "Static and dynamic noise abolish altruistic biases in Parkinson's disease independent of deep brain stimulation",
           "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26365079v1?rss=1",
-          "publishedAt": "2026-10-11T00:00:00.000Z"
-        },
-        {
-          "title": "Full stack academic publishing in seizures with artificial intelligence: a cautionary tale",
-          "url": "https://www.medrxiv.org/content/10.64898/2026.10.07.26363237v1?rss=1",
-          "publishedAt": "2026-10-11T00:00:00.000Z"
-        },
-        {
-          "title": "Low-Dose Tenecteplase for Acute Ischemic Stroke Treatment in Aging Patients DATE-AGING Trial: Rationale and Design",
-          "url": "https://www.medrxiv.org/content/10.64898/2026.10.08.26361416v1?rss=1",
           "publishedAt": "2026-10-11T00:00:00.000Z"
         }
       ]
     },
     {
       "id": "bci-gtec-feed",
-      "checkedAt": "2026-10-12T08:46:50.698Z",
+      "checkedAt": "2026-10-13T02:34:29.228Z",
       "ok": true,
       "count": 15,
       "dated": 15,
@@ -196,7 +196,7 @@
     },
     {
       "id": "bci-brainproducts-feed",
-      "checkedAt": "2026-10-12T08:46:58.008Z",
+      "checkedAt": "2026-10-13T02:34:33.439Z",
       "ok": true,
       "count": 10,
       "dated": 10,
@@ -220,7 +220,7 @@
     },
     {
       "id": "bci-artinis-rss",
-      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "checkedAt": "2026-10-13T02:34:33.440Z",
       "ok": true,
       "count": 20,
       "dated": 20,
@@ -244,7 +244,7 @@
     },
     {
       "id": "bci-braingate-feed",
-      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "checkedAt": "2026-10-13T02:34:33.441Z",
       "ok": true,
       "count": 10,
       "dated": 10,
@@ -268,7 +268,7 @@
     },
     {
       "id": "bci-ieee-biomedical-feed",
-      "checkedAt": "2026-10-12T08:46:58.009Z",
+      "checkedAt": "2026-10-13T02:34:33.442Z",
       "ok": true,
       "count": 30,
       "dated": 30,
@@ -292,7 +292,7 @@
     },
     {
       "id": "bci-europepmc-med",
-      "checkedAt": "2026-10-12T08:47:01.912Z",
+      "checkedAt": "2026-10-13T02:34:50.853Z",
       "ok": true,
       "count": 20,
       "dated": 20,
@@ -316,7 +316,7 @@
     },
     {
       "id": "bci-neuralink-updates",
-      "checkedAt": "2026-10-12T08:47:01.914Z",
+      "checkedAt": "2026-10-13T02:34:50.854Z",
       "ok": true,
       "count": 27,
       "dated": 27,
@@ -340,7 +340,7 @@
     },
     {
       "id": "bci-neuroxess-news",
-      "checkedAt": "2026-10-12T08:47:01.914Z",
+      "checkedAt": "2026-10-13T02:34:50.855Z",
       "ok": true,
       "count": 6,
       "dated": 6,
@@ -364,7 +364,7 @@
     },
     {
       "id": "bci-cas-brain-2026",
-      "checkedAt": "2026-10-12T08:47:01.915Z",
+      "checkedAt": "2026-10-13T02:34:50.856Z",
       "ok": true,
       "count": 15,
       "dated": 15,
@@ -388,7 +388,7 @@
     },
     {
       "id": "bci-paradromics-news",
-      "checkedAt": "2026-10-12T08:47:03.337Z",
+      "checkedAt": "2026-10-13T02:34:53.099Z",
       "ok": true,
       "count": 5,
       "dated": 5,
@@ -412,7 +412,7 @@
     },
     {
       "id": "bci-mne-api",
-      "checkedAt": "2026-10-12T08:47:03.337Z",
+      "checkedAt": "2026-10-13T02:34:53.099Z",
       "ok": true,
       "count": 5,
       "dated": 5,
@@ -436,7 +436,7 @@
     },
     {
       "id": "bci-moabb-api",
-      "checkedAt": "2026-10-12T08:47:03.338Z",
+      "checkedAt": "2026-10-13T02:34:53.100Z",
       "ok": true,
       "count": 5,
       "dated": 5,
@@ -460,7 +460,7 @@
     },
     {
       "id": "bci-braindecode-api",
-      "checkedAt": "2026-10-12T08:47:03.338Z",
+      "checkedAt": "2026-10-13T02:34:53.100Z",
       "ok": true,
       "count": 5,
       "dated": 5,
@@ -484,7 +484,7 @@
     },
     {
       "id": "bci-brainflow-api",
-      "checkedAt": "2026-10-12T08:47:05.085Z",
+      "checkedAt": "2026-10-13T02:34:54.362Z",
       "ok": true,
       "count": 5,
       "dated": 5,

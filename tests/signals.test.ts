@@ -46,7 +46,7 @@ async function report(suffix: string, opts: { title: string; backfill?: string; 
     publishedAt: opts.publishedAt ?? new Date(), backfill: opts.backfill ?? null,
   });
   await sql`INSERT INTO analyses (article_id, input_revision, origin, relevance, category, title_zh, summary_zh, score, selected, output)
-            VALUES (${articleId}, 1, 'rule', 'pass', 'ai-models', ${opts.title}, '摘要', 80, false, ${sql.json({ fact: { title: opts.title } })})`;
+            VALUES (${articleId}, 1, 'rule', 'pass', 'hardware-acquisition', ${opts.title}, '摘要', 80, false, ${sql.json({ fact: { title: opts.title } })})`;
   await publishArticle(articleId);
   return articleId;
 }
@@ -100,24 +100,24 @@ test("history waits behind live work and founds no event; a new source's post fr
   assert.equal((await sql`SELECT 1 FROM fact_articles WHERE article_id = ${fresh}`).length, 1);
 });
 
-test("a discussion post that quotes a post not yet collected joins its story when the original arrives", async () => {
-  // Dan Shipper's "SONNET 5.5 IS OUT!" quoted Anthropic's post a minute before it was collected; the
-  // original then joined the fact a report had already founded (same-fact: no new fact, no rematch).
+test("a discussion post that quotes a post not yet collected joins its study when the original arrives", async () => {
+  // A discussion account quotes a BrainGate study announcement just before it is collected; the
+  // original then joins the fact a report had already founded (same-fact: no new fact, no rematch).
   const tweetId = `9${Date.now()}`;
   const { articleId: postId } = await upsertMaterial({
-    sourceId: SIGNAL, url: `https://x.com/danshipper/status/1${Date.now()}`, title: `SONNET IS OUT! ${ALONE}`, via: "fetch", publishedAt: new Date(),
-    xPost: { tweetId: `1${Date.now()}`, authorName: "Dan", handle: "danshipper", text: "SONNET IS OUT!", quoted: { authorName: "Anthropic", handle: "AnthropicAI", text: "Introducing", url: `https://x.com/AnthropicAI/status/${tweetId}` } },
+    sourceId: SIGNAL, url: `https://x.com/bciresearch/status/1${Date.now()}`, title: `NEW EEG STUDY ${ALONE}`, via: "fetch", publishedAt: new Date(),
+    xPost: { tweetId: `1${Date.now()}`, authorName: "Researcher", handle: "bciresearch", text: "NEW EEG STUDY", quoted: { authorName: "BrainGate", handle: "BrainGateTeam", text: "BrainGate reports an EEG study", url: `https://x.com/BrainGateTeam/status/${tweetId}` } },
   });
   assert.deepEqual(await settleNonEditorial(postId), { group: true });
   assert.equal((await groupArticle(postId, { signalOnly: true })).verdict, "signal-unmatched");
 
-  const first = await groupArticle(await report("quoted-first", { title: `Anthropic 发布 ${TOPIC} Sonnet` }));
+  const first = await groupArticle(await report("quoted-first", { title: `BrainGate reports ${TOPIC} EEG results` }));
   const { articleId: originalId } = await upsertMaterial({
-    sourceId: EDITORIAL, url: `https://x.com/AnthropicAI/status/${tweetId}`, title: `Introducing ${TOPIC} Sonnet`, bodyText: "Introducing.", bodyStatus: "ok",
-    via: "fetch", publishedAt: new Date(), xPost: { tweetId, authorName: "Anthropic", handle: "AnthropicAI", text: `Introducing ${TOPIC} Sonnet` },
+    sourceId: EDITORIAL, url: `https://x.com/BrainGateTeam/status/${tweetId}`, title: `BrainGate reports ${TOPIC} EEG results`, bodyText: `BrainGate reports ${TOPIC} EEG results.`, bodyStatus: "ok",
+    via: "fetch", publishedAt: new Date(), xPost: { tweetId, authorName: "BrainGate", handle: "BrainGateTeam", text: `BrainGate reports ${TOPIC} EEG results` },
   });
   await sql`INSERT INTO analyses (article_id, input_revision, origin, relevance, category, title_zh, summary_zh, score, selected, output)
-            VALUES (${originalId}, 1, 'rule', 'pass', 'ai-models', ${`Anthropic 发布 ${TOPIC} Sonnet`}, '摘要', 80, false, ${sql.json({ fact: { title: "Sonnet" } })})`;
+            VALUES (${originalId}, 1, 'rule', 'pass', 'hardware-acquisition', ${`BrainGate reports ${TOPIC} EEG results`}, '摘要', 80, false, ${sql.json({ fact: { title: "EEG results" } })})`;
   const joined = await groupArticle(originalId);
   assert.equal(joined.verdict, "same-fact");
   assert.equal(joined.storyId, first.storyId);

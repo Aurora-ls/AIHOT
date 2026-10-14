@@ -1,6 +1,6 @@
 # BCIHOT：分类、科研证据与首批信源草案
 
-核验日期：2026-10-12（Asia/Shanghai）。这是供站点运营者审阅的本地草案；当前正式 `site/`、`industry/` 与服务器数据库尚未改动。候选配置全部 `enabled=false`；采集许可、正文提取和服务器连通性仍需逐源确认。
+草案核验日期：2026-10-12（Asia/Shanghai）；本地适配记录：2026-10-13。任务书采用了本草案的十类和 21 个候选，已写入本地 `site/` 与 `industry/`。服务器目录和生产数据库仍只读；21 个候选全部 `enabled=false`，采集许可、正文提取和服务器连通性仍需逐源确认。
 
 ## 1. 建议的分类规则
 
@@ -47,18 +47,18 @@
 
 ## 3. 首批信源：16 个重点 + 5 个宽召回候选
 
-这些数字是本轮名单数量，不是网站已经启用的源数。采集配置在 [sources-candidate.json](sources-candidate.json)，HTTP 取证在 [source-audit.json](source-audit.json)，现有解析器结果在 [listing-results.json](listing-results.json)。2026-10-12 已用现有解析器检查全部21个配置：21/21都返回非空标题、原文链接和日期；这是列表解析通过，不等于正文补齐或生产采集通过。所有源默认摘要+原文链接，不代表得到全文转载许可。T1/T2 只表示原始发布/二手报道角色，不是科学证据强度；预印本不能因 T1 自动升级。
+这些数字是本轮名单数量，不是网站已经启用的源数。采集配置在 [sources-candidate.json](sources-candidate.json)，HTTP 取证在 [source-audit.json](source-audit.json)，列表解析结果在 [listing-results.json](listing-results.json)。2026-10-13 已用现有解析器在线只读检查全部 21 个配置：21/21 返回非空标题、原文链接和日期；这是列表解析通过，不等于正文补齐、许可确认或生产采集通过。自动测试使用 `fixtures/` 保存的 RSS/JSON/HTML 元数据响应片段，不访问外网。所有源默认摘要+原文链接，不代表得到全文转载许可。T1/T2 只表示原始发布/二手报道角色，不是科学证据强度；预印本不能因 T1 自动升级。
 
 | 优先级 | 来源及采集入口 | 对应类别 | 首批用途/局限 |
 |---|---|---|---|
 | P0 | [Nature · BMI](https://www.nature.com/subjects/brain-machine-interface.rss) · RSS | 1/2/3/4/5/8 | 用主题流集中收论文和研究评论；区分文章类型。 |
 | P0 | [Journal of Neural Engineering](https://iopscience.iop.org/journal/rss/1741-2552) · RSS | 1/2/3/4/8 | 神经工程原始研究；只读到元数据时不补实验细节。 |
 | P0 | [Neuromorphic Computing and Engineering](https://iopscience.iop.org/journal/rss/2634-4386) · RSS | 6/7/8 | 类脑硬件、脉冲算法与器件；是否与 BCI 直接相关另判。 |
-| P0 | [Europe PMC REST](https://www.ebi.ac.uk/europepmc/webservices/rest/search) · JSON | 1/2/3/4/5/7/8 | 按标题摘要中的 BCI/BMI 查询且限定 MED；完整查询在配置。不能把索引收录当科研成熟度。 |
+| P0 | [Europe PMC REST](https://www.ebi.ac.uk/europepmc/webservices/rest/search) · JSON | 1/2/3/4/5/7/8 | 按标题摘要中的 BCI/BMI 查询且限定 MED；配置使用 `pageSize=20`、按最新日期排序且无分页游标，单次响应最多 20 条，结果量超过窗口时会截断，不能视作完整增量窗口。索引收录不代表科研成熟度。 |
 | P0 | [BrainGate](https://www.braingate.org/feed/) · RSS | 2/4/9 | 人体 BCI 研究项目消息；一手消息也要回溯论文/注册记录。 |
 | P0 | [Neuralink Updates](https://neuralink.com/updates/) · 内嵌JSON | 1/2/4/5/9 | 原始 HTML 包含 blogPosts，可用现有 html_json_key；网页摘要不冒充全文。 |
 | P0 | [脑虎科技新闻](https://www.neuroxess.com/news/) · HTML | 1/2/4/5/9 | 本轮已找到新闻卡片与日期节点；不要用根 /feed/，本轮里面只有“世界，您好！”。 |
-| P0 | [中科院脑智卓越中心](https://cebsit.cas.cn/xwen/kyjz/2026/) · HTML | 2/3/7/8 | 国内研究进展；年度目录固定 2026，跨年需更新并重新核验。 |
+| P0 | [中科院脑智卓越中心](https://cebsit.cas.cn/xwen/kyjz/2026/) · HTML | 2/3/7/8 | 国内研究进展；路径固定在 `/2026/`，跨年需更新年度 URL、重验选择器并确认是否回看上一年度。 |
 | P0 | [Paradromics Company News](https://paradromics.com/news/) · HTML | 1/2/4/9 | 混合页只取本域名公司公告，媒体报道不能一律按公司一手计。 |
 | P0 | [g.tec](https://www.gtec.at/feed/) · RSS | 1/3/4/5/9/10 | 采集、闭环、康复与应用；活动营销和一般招聘另滤。 |
 | P0 | [Brain Products](https://pressrelease.brainproducts.com/feed/) · RSS | 1/2/10 | EEG 采集与分析软件；厂商宣传仍须限定证据。 |
@@ -102,14 +102,16 @@
 
 ## 6. 本地复核及实现边界
 
-2026-10-12 的原仓库：6 个类别、38 个主题、18 个 AI 示例源。正式包没有专门的 researchStage 字段，结构化已支持白名单 tags 与 fact.evidence/conditions，现有展示/公开出口会带标签。信源文件只新增数据库里不存在的 id，不会停用既有 18 源，也不会迁走已收录的 AI 内容。生产数据库处理须单独决定并备份。
+2026-10-12 的原仓库：6 个类别、38 个主题、18 个 AI 示例源。正式包没有专门的 researchStage 字段，结构化已支持白名单 tags 与 fact.evidence/conditions；本地适配通过现有摘要、类别和标签出口表达证据范围。信源文件只新增数据库里不存在的 id，不会停用既有 18 源，也不会迁走已收录的 AI 内容。生产数据库处理须单独决定并备份。
 
 - 默认 Node v22.14.0 不符合 package.json >=24.11；已用桌面 bundled Node v24.19.0 核验。
 - npm ci 安装完成；npm run typecheck 和 npm run build -w @aihot/web 成功。
-- npm run test:standalone：161 passed、0 failed、0 skipped、0 todo。Windows 首次失败因 OpenSSL 默认 cnf 缺失，设 OPENSSL_CONF 指向 Git runtime 的 cnf 后通过；未改测试。
-- npm test：本机 127.0.0.1:5432 无 PostgreSQL，ECONNREFUSED，数据库行为未验收。138 个顶层 *.test.ts 中有 32 个独立测试文件，其余 106 个需要数据库。
-- node --test apps/web/tests/*.test.ts：44 个案例，32 通过、12 失败因 Chromium 未安装；网页浏览器行为未验收。已有脚本/断言没有改动。
-- 采集配置/列表核验命令：node docs/bcihot/check-source-listings.ts；加 --live 会只读这些公开列表，写 listing-results.json。这是人工研究验证，不能从 npm test 连真实外网。
+- 任务书所记原工作树独立测试基线为 161 passed、0 failed、0 skipped、0 todo；本轮实际运行数和新增证据/解析测试见根目录 `PROGRESS.md`，没有删减原测试。
+- 原数据库基线因本机没有 PostgreSQL 而返回 ECONNREFUSED。2026-10-13 已在临时 Linux/Node 24.18.1、PostgreSQL 17.11、GNU tar、非 root 环境的 `_test` 数据库完整验收 700/700；新增覆盖的最新总数和输出见根目录 `PROGRESS.md`。
+- node --test apps/web/tests/*.test.ts：44 个案例在 Windows 缓存缺失时为 32/44；2026-10-13 已在官方 Playwright 1.61.1 镜像用 Node 24.19.0、锁定 Chromium 1228 和 WebKit 2311 完整复跑 44/44。既有测试只替换行业业务样例，测试声明数未减少；Edge 人工截图与真实跨浏览器测试分别记录。
+- 采集配置/列表核验命令：node docs/bcihot/check-source-listings.ts；加 --live 会只读这些公开列表，写 listing-results.json。本轮 2026-10-13 复核为 21/21；这不证明正文补齐、许可确认或生产服务器可用。
 - 服务器部署目录是 /root/bcihot。SITE_URL 是公开链接基础地址，宿主端口由 PORT 决定；配置和生产数据本轮只读，不启动 worker/模型或付费采集。
 
-供执行 agent 使用的后续任务书见 [goal.md](goal.md)。方案审阅后再明确采用版本。
+本地配置按任务书进入隔离审查；运营者口味、条款主体、信源启用和生产迁移仍见根目录 `BLOCKED.md`。
+
+测试中的阶段标签和安全摘要是基于已读取原文的人工审核夹具：用于校验连续引文、条件范围、归一化和公开传输，不能当成模型会自动识别或拒绝临床/审批误写的证据。删除证据的用例证明不在原文中的引文会被丢弃；其中待核实/人体标签也由夹具明确给出。实际模型的阶段判断、过度主张拒绝和医学准确性尚未验收，当前提示词对此提出约束；框架不额外按标签执行医疗语义审核。

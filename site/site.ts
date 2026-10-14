@@ -18,16 +18,15 @@ export const EDITION_WHEN = {
 
 export const SITE = {
   /** 站名：导航、页面标题、分享图、RSS、MCP、后台都用它。 */
-  name: "MyHOT",
+  name: "BCIHOT",
   /**
-   * 行业词：拼进默认说法里，比如“AI 日报”“AI 动态”。
-   * 改成“法律”“HR”“黄金”之类，页面上就会变成“法律日报”“法律动态”。
+   * 行业词：拼进默认说法里，比如“脑机接口日报”“脑机接口动态”。
    */
-  subject: "AI",
+  subject: "脑机接口",
   /** 首页的完整标题（浏览器标签、搜索结果）。 */
-  homeTitle: "MyHOT — AI 行业动态 · 每日精选与日报",
+  homeTitle: "BCIHOT — 脑机接口研究与产业动态",
   /** 主题目录页（/topics）的标题。 */
-  topicsTitle: "AI 主题：公司与模型、技术方向、内容形态的最新动态",
+  topicsTitle: "脑机接口主题：机构、技术方向、研究形态与状态",
   /** 反馈表单输入框里的示例。 */
   feedbackExample: "例如：我在搜索某个关键词时遇到……我原本想……",
   /** 反馈页标题下面的一句话。 */
@@ -35,13 +34,13 @@ export const SITE = {
   /** 反馈表单邮箱框里的提示。 */
   feedbackEmailHint: "留下邮箱，我们可以回信联系你",
   /** 一句话介绍：搜索引擎、分享卡片、RSS、llms.txt 会用。 */
-  description: `从一批 AI 信源里挑出值得看的动态，把同一件事的多篇报道归到一起，${EDITION_WHEN.daily} 出一份日报。`,
+  description: "整理脑机接口研究、设备、临床与产业资料；科研证据和产品可用状态分开呈现，缺少的条件标为待核实。",
   /** llms.txt 里一句话介绍下面的一段详细介绍（选填）。 */
-  llmsIntro: null as string | null,
+  llmsIntro: "这是本地隔离审查配置，首批信源默认暂停。研究阶段、发表状态、监管状态、商业供货和真实部署按原文证据分别标注。",
   /** 一行小字：分享图、海报下方。 */
-  tagline: "值得关注的 AI 动态",
+  tagline: "看清脑机接口研究证据与可用边界",
   /** 搜索引擎读到的关键词（首页结构化数据）。 */
-  keywords: ["AI 资讯", "AI 新闻", "AI 日报", "AI 行业动态"] as string[],
+  keywords: ["脑机接口", "BCI", "脑机接口研究", "神经工程", "脑机接口临床与产业"] as string[],
   /** 网站开始收录的年份（结构化数据的时间范围，选填）。 */
   since: null as string | null,
   /** 界面语言（HTML lang、og:locale）。 */
@@ -51,31 +50,31 @@ export const SITE = {
   /** 标准图标（favicon.ico、icon.png、icon-192.png、apple-icon.png、logo.svg）以外也放在网站根目录的图标，site/brand/ 里的文件名（选填）；manifest.webmanifest 或外站引用了它们时用。 */
   rootIcons: [] as string[],
   /**
-   * MCP 工具名的前缀（小写字母、数字、下划线），工具会叫 myhot_get_latest、myhot_search……
+   * MCP 工具名的前缀（小写字母、数字、下划线），工具会叫 bcihot_get_latest、bcihot_search……
    * 已经有人接入后就不要再改。
    */
-  mcpPrefix: "myhot",
+  mcpPrefix: "bcihot",
   /**
    * 公开接口（MCP、OpenAPI、llms.txt）的版本号，只升不降。
    * 改了接口里已有的字段或含义时升主版本，并在部署说明里写清。
    */
-  interfaceVersion: "4.0.0",
+  interfaceVersion: "5.0.0",
   /** 对外联系邮箱（选填）：llms.txt 和给 Agent 的使用说明里会写。 */
   contactEmail: null as string | null,
   /** 关于页底部的一行小字（选填）。 */
-  footerNote: "由 AIHOT 开源框架驱动",
+  footerNote: "本地隔离审查配置 · 运营信息待确认",
   /** 中国大陆网站的 ICP 备案号（选填），填了就显示在侧栏底部和“我的”页底部，并链接到工信部备案系统。 */
   icp: null as string | null,
   /** 源码的 GitHub 仓库地址（选填），填了就在侧栏底部和“我的”页底部显示“GitHub 开源”。 */
   github: null as string | null,
   /** 结构化数据里的网站运营者（搜索引擎用）。 */
   organization: {
-    name: "MyHOT",
+    name: "运营主体待确认",
     /** 创始人（选填）。 */
     founder: null as null | { name: string; alternateName?: string; jobTitle?: string; description?: string; url?: string },
   },
   /** 抓取信源时报上的名字和版本（User-Agent 里用），不要冒用别的站。 */
-  crawlerName: "MyHOTBot/1.0",
+  crawlerName: "BCIHOTBot/1.0",
 } as const;
 
 /** 使用规则和隐私说明两页（正文在 pages/ 里）。 */
@@ -83,9 +82,9 @@ export const POLICY = {
   terms: {
     /** 页面名：导航、页脚、页面标题都用它。 */
     name: "使用规则",
-    description: "本站网页、RSS、公开 API 与 MCP 的使用规则。",
+    description: "BCIHOT 本地审查模板；运营主体、适用范围和生效日期待确认。",
     /** llms.txt 里对这一页的一句说明（选填）。 */
-    covers: null as string | null,
+    covers: "本地审查模板；运营主体、数据用途、授权范围和生效日期待本人确认。" as string | null,
     /** Agent 接入页的 RSS、API 两栏各自提醒的使用规则（选填）。 */
     notes: null as null | { rss: string; api: string },
     /**
@@ -100,9 +99,9 @@ export const POLICY = {
     headers: null as null | Record<string, string>,
   },
   privacy: {
-    description: "本站如何处理浏览器本地数据、反馈资料与访问日志。",
+    description: "BCIHOT 本地审查模板；实际数据用途、运营者和联系渠道待确认。",
     /** llms.txt 里对这一页的一句说明（选填）。 */
-    covers: null as string | null,
+    covers: "本地审查模板；请运营者确认实际部署、访问日志、反馈流转和保存期限。" as string | null,
   },
   /**
    * X 帖子本身的文字和图片算不算全文：算的话，只在这篇允许站内全文时显示（信源允许全文、正文也取到了）；
@@ -115,7 +114,7 @@ export const POLICY = {
 export const ITEM_COPY = {
   /** 模型写的那句理由叫什么：卡片、详情页、Markdown 导出、给 Agent 的回答和群推送都用它。 */
   reasonLabel: "推荐理由",
-  /** 读者在网页和分享图上看不看得到 AI 评分。只管显示：公开 API 和 MCP 的数据照样带 score，后台照常显示。 */
+  /** 读者在网页和分享图上看不看得到精选评分。只管显示：公开 API 和 MCP 的数据照样带 score，后台照常显示。 */
   showScore: true,
 };
 
@@ -134,15 +133,15 @@ export const ABOUT = {
   /** 页面描述（搜索结果、分享卡片）。 */
   description: `关于 ${SITE.name}：${SITE.description}`,
   /** 大标题：第一行正常颜色，第二行强调色。 */
-  headline: ["AI 圈每天都有新动静，", "值得看的，只有几条。"] as [string, string],
+  headline: ["脑机接口进展各有证据边界，", "研究结果不能替产品背书。"] as [string, string],
   /** 标题下面的一段话。{sources} 会换成实时的信源数（两边自动加空格，所以 {sources} 两边不写空格）；统计没取到时换成 sourcesFallback。 */
-  lead: `${SITE.name} 替你盯着{sources}个信源：抓取、归并、打分、精选，${EDITION_WHEN.daily} 出一份日报。免费，不用注册。`,
+  lead: "这份本地审查配置按脑机接口方向整理资料：研究阶段、发表状态与产品可用状态分别记录；首批 21 个候选信源均暂停。",
   sourcesFallback: "十几",
   /** 信源河动画下面的四个环节。 */
   steps: {
-    collect: "官方博客、媒体和个人的订阅源都在看；更新越勤的源看得越勤，最快 15 分钟看一次。",
-    store: "抓到的都存下来，同一件事的报道归到一起，热点榜就是从这里算出来的。",
-    select: `模型先看是不是这个行业的事、有没有实际信息，再写中文标题、摘要和${ITEM_COPY.reasonLabel}；营销稿和重复转发进不来。`,
+    collect: "首批候选源仅供配置审查，默认暂停；来源许可确认前只保留摘要和原文链接。",
+    store: "事件按主体、动作和证据条件归组；旧许可、不同型号和不同适应证不会自动移给新结果。",
+    select: `模型只按原文整理研究设计、样本与可用状态；证据缺失时明确标注待核实，再生成标题、摘要和${ITEM_COPY.reasonLabel}。`,
     publish: `${EDITION_WHEN.daily} 出日报，${EDITION_WHEN.weekly} 出周报，${EDITION_WHEN.monthly} 出月报。`,
   },
   /**
@@ -176,7 +175,7 @@ export const ADMIN = {
 /** Agent 接入页的示例。 */
 export const AGENT = {
   /** MCP 工具表里“搜索”一行：能搜什么、可以怎么问。 */
-  search: { scope: "按公司、产品、人物或话题搜最近 7 天", ask: "这家公司最近发了什么？" },
+  search: { scope: "按机构、设备、研究方向、信号模态或应用搜最近 7 天", ask: "这项结果的对象、样本、在线/离线条件和可用状态是什么？" },
 };
 
 /** 日报、周报、月报版面上的说法。 */
@@ -187,21 +186,20 @@ export const REPORTS = {
   motto: SITE.subject as string,
   /** 每种报告页面的描述（搜索结果、分享卡片），不带句号；llms.txt 介绍周报、月报时也用它。 */
   descriptions: {
-    daily: `${SITE.name} ${subjectAfter(`${EDITION_WHEN.daily}（北京时间）发布的`, "行业精编日报")}`,
-    weekly: subjectAfter("每周", "行业综合回顾"),
-    monthly: subjectAfter("每月", "行业盘点"),
+  daily: `${SITE.name} ${subjectAfter(`${EDITION_WHEN.daily}（北京时间）发布的`, "研究与产业日报")}`,
+  weekly: subjectAfter("每周", "研究与产业综述"),
+  monthly: subjectAfter("每月", "研究与产业回顾"),
   },
   /**
-   * 一期里的一条怎么称呼（“4 件大事”）：没有头条时的标题（“这一天的 4 件 AI 大事”）、报头和往期目录的条数、
-   * 周报月报没有总述时的那句话，以及订阅说明里的“按栏目分好的大事”都用它。
+   * 一期里的一条怎么称呼：没有头条时的标题、报头和往期目录的条数、周报月报没有总述时的那句话都用它。
    */
-  entry: { measure: "件", noun: "大事" },
+  entry: { measure: "条", noun: "进展" },
   /** 报头上其余几个数字后面的说法；精选数和日报期数在关于页、主题页也这样写。 */
-  metricUnits: { sourcesCount: "个来源", firstPartyEvents: "件一手发布", selectedCount: "条精选", reportsCovered: "期日报" },
+  metricUnits: { sourcesCount: "个候选源", firstPartyEvents: "件官方发布", selectedCount: "条精选", reportsCovered: "期日报" },
   /** 报告分享图上“共几条”的说法。 */
-  shareUnit: "件大事",
+  shareUnit: "条进展",
   /** 日报时段内有资料经过评判、但没有新大事时的标题与导语。 */
-  quiet: { title: "今日安静，无大事发生", paragraph: `${subjectAfter("北京时间 {start} 至 {end}，没有新的", "大事")}。` },
+  quiet: { title: "暂无可核验的新进展", paragraph: `北京时间 {start} 至 {end}，暂无新的${SITE.subject}资料通过筛选。` },
 };
 
 /** 运维告警（只发给站长）里随部署而变的几处说法。 */
@@ -234,12 +232,12 @@ export const COMMUNITY_FEEDS: { dev: string[]; hn: string[] } = {
 /** 各页分享图（/og/pages/*.png）上的文字。主题目录页的那张按主题数自动生成。 */
 export const CARDS: Record<string, { kicker: string; title: string; subtitle: string; accent?: "hot" | "amber" }> = {
   site: { kicker: subjectAfter("每日", "精选"), title: SITE.tagline, subtitle: SITE.description },
-  all: { kicker: subjectAfter("全部", "动态"), title: "所有信源的最新动态，一站看完", subtitle: "按时间汇总各信源的最新动态，可按类别与标签筛选。" },
+  all: { kicker: subjectAfter("全部", "动态"), title: "研究证据、可用状态与产业进展", subtitle: "按时间汇总脑机接口资料，可按领域、形态和状态筛选。" },
   hot: { kicker: "热点榜", title: "过去 48 小时，大家在讨论什么", subtitle: "热度指数、趋势与组成热度的公开来源。", accent: "hot" },
-  daily: { kicker: withSubject("日报"), title: subjectAfter(`每天 ${spokenTime(EDITION_TIMES.daily)}，一份读得完的`, "日报"), subtitle: `${subjectAfter("前一天值得关注的", "动态")}。` },
-  weekly: { kicker: withSubject("周报"), title: `一周${REPORTS.entry.noun}，一次看清`, subtitle: "本周的主线、重要发布与值得回看的讨论。" },
-  monthly: { kicker: withSubject("月报"), title: "一个月的变化", subtitle: "月度主线与关键事件回顾。" },
-  about: { kicker: "关于", title: `关于 ${SITE.name}`, subtitle: SITE.description },
+  daily: { kicker: withSubject("日报"), title: subjectAfter(`每天 ${spokenTime(EDITION_TIMES.daily)}，一份读得完的`, "日报"), subtitle: "保留研究对象、实验条件和资料来源范围。" },
+  weekly: { kicker: withSubject("周报"), title: `一周${REPORTS.entry.noun}，一次看清`, subtitle: "研究证据、可用状态与产业变化分开回顾。" },
+  monthly: { kicker: withSubject("月报"), title: "一个月的变化", subtitle: "按原文核对关键研究、监管与部署进展。" },
+  about: { kicker: "关于", title: `关于 ${SITE.name}`, subtitle: "本地隔离审查配置，运营信息待确认。" },
   terms: { kicker: "使用规则", title: `${SITE.name} 使用规则`, subtitle: "网页、API、RSS 与 MCP 的使用范围。" },
   privacy: { kicker: "隐私说明", title: `${SITE.name} 隐私说明`, subtitle: "访问日志、浏览器本地数据与反馈资料的处理方式。" },
   changelog: { kicker: "更新日志", title: `${SITE.name} 更新日志`, subtitle: "功能更新、优化、公告与下线记录。" },
@@ -300,12 +298,12 @@ export const PUBLIC_CATEGORIES = {
   feedLabels: {},
 } as const;
 
-/** “AI 日报”这类说法：行业词和名词之间，英文词加空格，中文词不加。 */
+/** “脑机接口日报”这类说法：行业词和名词之间，英文词加空格，中文词不加。 */
 export function withSubject(noun: string): string {
   return /[A-Za-z0-9]$/.test(SITE.subject) ? `${SITE.subject} ${noun}` : `${SITE.subject}${noun}`;
 }
 
-/** “按主题看 AI”“往期 AI 日报”这类说法：行业词接在中文后面，英文词前加空格，中文词不加；noun 照 withSubject 接上。 */
+/** “按主题看脑机接口”“往期脑机接口日报”这类说法：英文词前加空格，中文词不加；noun 照 withSubject 接上。 */
 export function subjectAfter(text: string, noun?: string): string {
   const gap = /^[A-Za-z0-9]/.test(SITE.subject) ? " " : "";
   return `${text}${gap}${noun ? withSubject(noun) : SITE.subject}`;

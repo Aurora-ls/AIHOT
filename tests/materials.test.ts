@@ -145,10 +145,10 @@ test("another source reporting an imported article first does not set its baseli
 });
 
 test("a return to an earlier version is not a revision", async () => {
-  // One listing with two cards for one post ("Company Mistral and Mozilla…" / "Mistral and Mozilla…").
+  // One listing with two cards for one post ("NeuroXess and a study…" / "NeuroXess BCI study…").
   const url = `https://example.com/two-cards-${tag()}`;
-  const a = { sourceId: SOURCE, url, title: "Company Mistral and Mozilla", excerpt: "card", via: "fetch" as const };
-  const b = { ...a, title: "Mistral and Mozilla" };
+  const a = { sourceId: SOURCE, url, title: "NeuroXess and a BCI study", excerpt: "card", via: "fetch" as const };
+  const b = { ...a, title: "NeuroXess BCI study" };
   const first = await upsertMaterial(a);
   assert.equal((await upsertMaterial(b)).revised, true, "a version not seen before is a revision");
   await sql`UPDATE articles SET processing_state = 'analyzed' WHERE id = ${first.articleId}`;
@@ -157,8 +157,8 @@ test("a return to an earlier version is not a revision", async () => {
     assert.equal((await upsertMaterial(b)).revised, false, "and to the current one again");
   }
   const s = await state(first.articleId);
-  assert.deepEqual([s.revision, s.title, s.processing_state], [2, "Mistral and Mozilla", "analyzed"], "nothing to analyse or publish again");
-  assert.equal((await upsertMaterial({ ...a, title: "Mistral and Mozilla, updated" })).revised, true, "a new version still is");
+  assert.deepEqual([s.revision, s.title, s.processing_state], [2, "NeuroXess BCI study", "analyzed"], "nothing to analyse or publish again");
+  assert.equal((await upsertMaterial({ ...a, title: "NeuroXess BCI study, updated" })).revised, true, "a new version still is");
   assert.equal((await state(first.articleId)).revision, 3);
 });
 

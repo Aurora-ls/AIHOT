@@ -1,370 +1,513 @@
 {
-  "$comment": "示范信源：首次启动时导入（scripts/seed.ts），已存在的不会被覆盖。之后在后台“信源”里新建、修改和暂停。字段说明见 docs/customize.md。",
+  "$comment": "BCIHOT 首批 21 个候选种子；全部暂停且全文权限关闭。seed 只补数据库中不存在的 ID，不会暂停或替换既有源。启用和生产数据处理待运营者另行决定。",
   "sources": [
     {
-      "id": "rss-openai-news",
-      "name": "OpenAI News",
+      "id": "bci-nature-bmi",
+      "name": "Nature · Brain–machine interface",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://openai.com/news/rss.xml",
+        "feedUrl": "https://www.nature.com/subjects/brain-machine-interface.rss",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "openai",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "nature"
     },
     {
-      "id": "rss-google-deepmind",
-      "name": "Google DeepMind",
+      "id": "bci-jne-feed",
+      "name": "Journal of Neural Engineering",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://deepmind.google/blog/rss.xml",
+        "feedUrl": "https://iopscience.iop.org/journal/rss/1741-2552",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "google",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "jne"
     },
     {
-      "id": "rss-google-research",
-      "name": "Google Research",
+      "id": "bci-neurochip-journal",
+      "name": "Neuromorphic Computing and Engineering",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://research.google/blog/rss/",
+        "feedUrl": "https://iopscience.iop.org/journal/rss/2634-4386",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "google",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方",
-        "研究"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "neuromorphic-engineering"
     },
     {
-      "id": "rss-hugging-face",
-      "name": "Hugging Face Blog",
+      "id": "bci-arxiv-qbio",
+      "name": "arXiv · q-bio.NC",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://huggingface.co/blog/feed.xml",
+        "feedUrl": "https://rss.arxiv.org/rss/q-bio.NC",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "hugging-face",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方",
-        "开源"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "arxiv"
     },
     {
-      "id": "rss-microsoft-research",
-      "name": "Microsoft Research",
+      "id": "bci-arxiv-csne",
+      "name": "arXiv · cs.NE",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://www.microsoft.com/en-us/research/feed/",
+        "feedUrl": "https://rss.arxiv.org/rss/cs.NE",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "microsoft",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方",
-        "研究"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "arxiv"
     },
     {
-      "id": "rss-nvidia-blog",
-      "name": "NVIDIA Blog",
+      "id": "bci-biorxiv-neuro",
+      "name": "bioRxiv · Neuroscience",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://blogs.nvidia.com/feed/",
+        "feedUrl": "https://connect.biorxiv.org/biorxiv_xml.php?subject=neuroscience",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": "nvidia",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "biorxiv"
     },
     {
-      "id": "rss-aws-ml",
-      "name": "AWS Machine Learning Blog",
+      "id": "bci-medrxiv-neurology",
+      "name": "medRxiv · Neurology",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://aws.amazon.com/blogs/machine-learning/feed/",
+        "feedUrl": "https://connect.medrxiv.org/medrxiv_xml.php?subject=neurology",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": null,
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方",
-        "教程"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "medrxiv"
     },
     {
-      "id": "rss-github-ai",
-      "name": "GitHub Blog · AI & ML",
+      "id": "bci-gtec-feed",
+      "name": "g.tec medical engineering",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://github.blog/ai-and-ml/feed/",
+        "feedUrl": "https://www.gtec.at/feed/",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": null,
+      "owner_entity_id": "gtec",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-mistral",
-      "name": "Mistral AI",
+      "id": "bci-brainproducts-feed",
+      "name": "Brain Products Press Release",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://mistral.ai/news/rss",
+        "feedUrl": "https://pressrelease.brainproducts.com/feed/",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": null,
+      "owner_entity_id": "brain-products",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "官方"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-bair",
-      "name": "Berkeley AI Research",
+      "id": "bci-artinis-rss",
+      "name": "Artinis · (f)NIRS",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://bair.berkeley.edu/blog/feed.xml",
+        "feedUrl": "https://artinis.com/blogpost-all?format=rss",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T1",
-      "owner_entity_id": null,
+      "owner_entity_id": "artinis",
       "participation_mode": "editorial",
-      "interval_minutes": 180,
-      "tags": [
-        "研究"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-the-verge-ai",
-      "name": "The Verge · AI",
+      "id": "bci-braingate-feed",
+      "name": "BrainGate",
       "kind": "rss",
       "config": {
-        "feedUrl": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+        "feedUrl": "https://www.braingate.org/feed/",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "braingate",
+      "participation_mode": "editorial",
+      "interval_minutes": 360,
+      "tags": [],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": false
+    },
+    {
+      "id": "bci-ieee-biomedical-feed",
+      "name": "IEEE Spectrum · Biomedical",
+      "kind": "rss",
+      "config": {
+        "feedUrl": "https://spectrum.ieee.org/feeds/topic/biomedical.rss",
+        "_aihot": {
+          "initialBackfillLimit": 5
         }
       },
       "tier": "T2",
-      "owner_entity_id": null,
       "participation_mode": "editorial",
-      "interval_minutes": 60,
-      "tags": [
-        "媒体"
-      ],
+      "interval_minutes": 360,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "ieee-spectrum"
     },
     {
-      "id": "rss-techcrunch-ai",
-      "name": "TechCrunch · AI",
-      "kind": "rss",
+      "id": "bci-europepmc-med",
+      "name": "PubMed 文献索引（Europe PMC API）",
+      "kind": "json_list",
       "config": {
-        "feedUrl": "https://techcrunch.com/category/artificial-intelligence/feed/",
+        "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=%28TITLE_ABS%3A%22brain-computer+interface%22+OR+TITLE_ABS%3A%22brain-machine+interface%22%29+SRC%3AMED+FIRST_PDATE%3A%5B*+TO+NOW%5D+sort_date%3Ay&format=json&resultType=core&pageSize=20",
+        "mode": "json_api",
+        "itemsPath": "resultList.result",
+        "titlePaths": [
+          "title"
+        ],
+        "urlTemplate": "https://europepmc.org/article/MED/{id}",
+        "summaryPaths": [
+          "abstractText"
+        ],
+        "publishedAtPath": "firstPublicationDate",
+        "externalIdPath": "id",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
       "participation_mode": "editorial",
-      "interval_minutes": 60,
-      "tags": [
-        "媒体"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false,
+      "owner_entity_id": "europe-pmc"
     },
     {
-      "id": "rss-ars-technica-ai",
-      "name": "Ars Technica · AI",
-      "kind": "rss",
+      "id": "bci-neuralink-updates",
+      "name": "Neuralink · Updates",
+      "kind": "json_list",
       "config": {
-        "feedUrl": "https://arstechnica.com/ai/feed/",
+        "url": "https://neuralink.com/updates/",
+        "mode": "html_json_key",
+        "jsonKey": "blogPosts",
+        "itemsPath": "blogPosts",
+        "titlePaths": [
+          "fields.title",
+          "name"
+        ],
+        "urlTemplate": "https://neuralink.com/updates/{slug}/",
+        "summaryPaths": [
+          "fields.summary",
+          "fields.intro_text"
+        ],
+        "publishedAtPath": "published",
+        "externalIdPath": "slug",
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "neuralink",
       "participation_mode": "editorial",
-      "interval_minutes": 60,
-      "tags": [
-        "媒体"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-mit-tech-review-ai",
-      "name": "MIT Technology Review · AI",
-      "kind": "rss",
+      "id": "bci-neuroxess-news",
+      "name": "脑虎科技 · 新闻动态",
+      "kind": "web_list",
       "config": {
-        "feedUrl": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+        "url": "https://www.neuroxess.com/news/",
+        "parseMode": "html",
+        "itemSelector": "a.news-item",
+        "titleSelector": ".news-item__title",
+        "publishedAtSelector": ".news-item__date",
+        "allowUrlPrefixes": [
+          "https://www.neuroxess.com/news/"
+        ],
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "neuroxess",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "媒体"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-the-decoder",
-      "name": "The Decoder",
-      "kind": "rss",
+      "id": "bci-cas-brain-2026",
+      "name": "中科院脑智卓越中心 · 科研进展",
+      "kind": "web_list",
       "config": {
-        "feedUrl": "https://the-decoder.com/feed/",
+        "url": "https://cebsit.cas.cn/xwen/kyjz/2026/",
+        "parseMode": "html",
+        "itemSelector": ".fl.w660:has(h3 a)",
+        "linkSelector": "h3 a",
+        "titleSelector": "h3 a",
+        "publishedAtSelector": ".time",
+        "allowUrlPrefixes": [
+          "https://cebsit.cas.cn/xwen/kyjz/2026/"
+        ],
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "cas-cebsit",
       "participation_mode": "editorial",
-      "interval_minutes": 60,
-      "tags": [
-        "媒体"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-simon-willison",
-      "name": "Simon Willison",
-      "kind": "rss",
+      "id": "bci-paradromics-news",
+      "name": "Paradromics · Company News",
+      "kind": "web_list",
       "config": {
-        "feedUrl": "https://simonwillison.net/atom/everything/",
+        "url": "https://paradromics.com/news/",
+        "parseMode": "html",
+        "itemSelector": ".company-news-special, .news-post:has(.post-title a[href^=\"https://paradromics.com/news/\"])",
+        "linkSelector": ".post-title a",
+        "titleSelector": ".post-title a",
+        "publishedAtSelector": ".post-date",
+        "publishedAtUtcOffset": "-05:00",
+        "allowUrlPrefixes": [
+          "https://paradromics.com/news/"
+        ],
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "paradromics",
       "participation_mode": "editorial",
-      "interval_minutes": 120,
-      "tags": [
-        "个人"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-import-ai",
-      "name": "Import AI",
-      "kind": "rss",
+      "id": "bci-mne-api",
+      "name": "MNE-Python · Releases",
+      "kind": "json_list",
       "config": {
-        "feedUrl": "https://importai.substack.com/feed",
+        "url": "https://api.github.com/repos/mne-tools/mne-python/releases?per_page=5",
+        "mode": "json_api",
+        "titlePaths": [
+          "name",
+          "tag_name"
+        ],
+        "urlTemplate": "{raw:html_url}",
+        "summaryPaths": [
+          "body"
+        ],
+        "publishedAtPath": "published_at",
+        "externalIdPath": "id",
+        "requireBoolean": {
+          "path": "draft",
+          "equals": false
+        },
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "mne",
       "participation_mode": "editorial",
-      "interval_minutes": 180,
-      "tags": [
-        "个人",
-        "周刊"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
     },
     {
-      "id": "rss-latent-space",
-      "name": "Latent Space",
-      "kind": "rss",
+      "id": "bci-moabb-api",
+      "name": "MOABB · Releases",
+      "kind": "json_list",
       "config": {
-        "feedUrl": "https://www.latent.space/feed",
+        "url": "https://api.github.com/repos/NeuroTechX/moabb/releases?per_page=5",
+        "mode": "json_api",
+        "titlePaths": [
+          "name",
+          "tag_name"
+        ],
+        "urlTemplate": "{raw:html_url}",
+        "summaryPaths": [
+          "body"
+        ],
+        "publishedAtPath": "published_at",
+        "externalIdPath": "id",
+        "requireBoolean": {
+          "path": "draft",
+          "equals": false
+        },
         "_aihot": {
-          "initialBackfillLimit": 8
+          "initialBackfillLimit": 5
         }
       },
-      "tier": "T2",
-      "owner_entity_id": null,
+      "tier": "T1",
+      "owner_entity_id": "moabb",
       "participation_mode": "editorial",
-      "interval_minutes": 180,
-      "tags": [
-        "个人"
-      ],
+      "interval_minutes": 720,
+      "tags": [],
       "site_fulltext": false,
-      "syndicate_fulltext": false
+      "syndicate_fulltext": false,
+      "enabled": false
+    },
+    {
+      "id": "bci-braindecode-api",
+      "name": "Braindecode · Releases",
+      "kind": "json_list",
+      "config": {
+        "url": "https://api.github.com/repos/braindecode/braindecode/releases?per_page=5",
+        "mode": "json_api",
+        "titlePaths": [
+          "name",
+          "tag_name"
+        ],
+        "urlTemplate": "{raw:html_url}",
+        "summaryPaths": [
+          "body"
+        ],
+        "publishedAtPath": "published_at",
+        "externalIdPath": "id",
+        "requireBoolean": {
+          "path": "draft",
+          "equals": false
+        },
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "braindecode",
+      "participation_mode": "editorial",
+      "interval_minutes": 720,
+      "tags": [],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": false
+    },
+    {
+      "id": "bci-brainflow-api",
+      "name": "BrainFlow · Releases",
+      "kind": "json_list",
+      "config": {
+        "url": "https://api.github.com/repos/brainflow-dev/brainflow/releases?per_page=5",
+        "mode": "json_api",
+        "titlePaths": [
+          "name",
+          "tag_name"
+        ],
+        "urlTemplate": "{raw:html_url}",
+        "summaryPaths": [
+          "body"
+        ],
+        "publishedAtPath": "published_at",
+        "externalIdPath": "id",
+        "requireBoolean": {
+          "path": "draft",
+          "equals": false
+        },
+        "_aihot": {
+          "initialBackfillLimit": 5
+        }
+      },
+      "tier": "T1",
+      "owner_entity_id": "brainflow",
+      "participation_mode": "editorial",
+      "interval_minutes": 720,
+      "tags": [],
+      "site_fulltext": false,
+      "syndicate_fulltext": false,
+      "enabled": false
     }
   ]
 }

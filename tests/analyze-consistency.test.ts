@@ -20,8 +20,8 @@ const provider = await stub(async (_hit, request) => {
   }
   const content = step === "prefilter" ? { label: "PASS", reason: "local fixture" }
     : step === "score" ? { attentionScore: SELECTING_SCORE }
-    : step === "structure" ? { category: "ai-models", tags: [], subjects: [], scope: "single", fact: null }
-    : { itemType: "model_release", authorRole: "principal", tags: ["模型发布"], editorialJudgment: "模型能力提升", titleZh: "实验室发布新模型", summaryZh: "实验室发布新模型，并公布了评测结果与价格。" };
+    : step === "structure" ? { category: "decoding-signal", tags: ["解码与信号处理"], subjects: [], scope: "single", fact: null }
+    : { itemType: "research_paper", authorRole: "observer", tags: ["论文/研究"], editorialJudgment: "原文说明了离线解码设置和结果范围", titleZh: "研究团队报告 EEG 离线解码结果", summaryZh: "研究团队在原文数据上比较 EEG 解码方法，结果仅适用于该离线任务。" };
   return { choices: [{ message: { content: JSON.stringify(content) } }] };
 });
 pointModels(provider.url);

@@ -18,7 +18,7 @@ import { publishArticle } from "@aihot/backend/publication/publish";
 
 const T = tag();
 const SOURCE = `test-events-${T}`;
-const FACT_TITLE = `测试事件${T}发布新模型`;
+const FACT_TITLE = `测试事件${T}报告 EEG 离线解码结果`;
 
 // The model calls the first candidate the same occurrence (and, asked about a pair, agrees), but
 // only once the test lets it answer; the same stub serves the judge and the review model.
@@ -39,7 +39,7 @@ const provider = await stub(async (_hit, req) => {
   const ids = [...user.matchAll(/【候选 (C\d+)】/g)].map((m) => m[1]!);
   const answer = pair
     ? { a: "发布", b: "发布", relation: pairRelation ?? relation, difference: "", confidence: 0.95 }
-    : { query: "发布新模型", decisions: ids.map((id, index) => ({ id, relation: answerAll || index === 0 ? relation : "UNRELATED", confidence: 0.95, note: "" })), selection: { addsValue: true, reason: "fixture news" } };
+    : { query: "报告 EEG 离线解码结果", decisions: ids.map((id, index) => ({ id, relation: answerAll || index === 0 ? relation : "UNRELATED", confidence: 0.95, note: "" })), selection: { addsValue: true, reason: "fixture research result" } };
   return { id: "stub", choices: [{ message: { content: JSON.stringify(answer) } }], usage: { prompt_tokens: 10, completion_tokens: 10, total_tokens: 20 } };
 });
 for (const name of ["DEEPSEEK", "XIAOMI_MIMO"]) {
@@ -70,10 +70,10 @@ function randomText() {
 
 async function report(suffix: string, title = FACT_TITLE, summary = "摘要", publishedAt = new Date()) {
   const { articleId } = await upsertMaterial({
-    sourceId: SOURCE, url: `https://example.com/events-${T}-${suffix}`, title: `Model launch ${T} ${suffix}`, bodyText: "A new model.", bodyStatus: "ok", via: "fetch", publishedAt,
+    sourceId: SOURCE, url: `https://example.com/events-${T}-${suffix}`, title: `EEG offline study ${T} ${suffix}`, bodyText: "A research team reports an offline EEG decoding comparison.", bodyStatus: "ok", via: "fetch", publishedAt,
   });
   await sql`INSERT INTO analyses (article_id, input_revision, origin, relevance, category, title_zh, summary_zh, score, selected, output)
-            VALUES (${articleId}, 1, 'rule', 'pass', 'ai-models', ${title}, ${summary}, 80, false, ${sql.json({ fact: { title, subject: "测试", action: "发布", object: "模型" } })})`;
+            VALUES (${articleId}, 1, 'rule', 'pass', 'decoding-signal', ${title}, ${summary}, 80, false, ${sql.json({ fact: { title, subject: "研究团队", action: "报告", object: "EEG 离线解码结果" } })})`;
   await publishArticle(articleId);
   return articleId;
 }

@@ -1,0 +1,10 @@
+{"route":"/","status":200,"title":"BCIHOT — 脑机接口研究与产业动态","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["动物实验"]}
+{"route":"/all","status":200,"title":"全部脑机接口动态 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["方法/仿真或离线评测","动物实验","人体实验","小样本患者结果","临床试验结果","原型演示","注册获批"]}
+{"route":"/topics","status":200,"title":"脑机接口主题：机构、技术方向、研究形态与状态 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["动物实验","人体实验","临床试验结果","原型演示","注册获批"]}
+{"route":"/topics/patient-results","status":200,"title":"患者与临床试验结果 最新动态 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["小样本患者结果","临床试验结果"]}
+{"route":"/topics/registered-approval","status":200,"title":"注册获批 最新动态 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["注册获批"]}
+{"route":"/daily","status":200,"title":"脑机接口日报 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["动物实验"]}
+{"route":"/weekly","status":200,"title":"脑机接口周报 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["动物实验"]}
+{"route":"/monthly","status":200,"title":"脑机接口月报 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":["动物实验"]}
+{"route":"/about","status":200,"title":"关于 · BCIHOT","width":1440,"scrollWidth":1440,"hasReviewLabel":true,"hasMockScore":false,"stageLabels":[]}
+{"browserErrors":[]}

@@ -1,0 +1,135 @@
+{
+  "date": "2026-10-13",
+  "scope": "Public scholarly abstracts and one FDA PMA record; curated examples for stage/claim boundaries, not model quality or clinical-accuracy evaluation.",
+  "cases": [
+    {
+      "id": "offline-ear-eeg",
+      "factTitle": "ear-EEG 离线架构基准",
+      "category": "decoding-signal",
+      "categoryTag": "解码与信号处理",
+      "stageTag": "方法/仿真或离线评测",
+      "sourceTitle": "Deep Learning for Ear-EEG-Based Brain-Computer Interface: A Systematic Comparison and Design Insights.",
+      "sourceUrl": "https://doi.org/10.3390/bios16080437",
+      "sourceText": "In this study, we retrospectively analyze the ear-EEG dataset of a previous study in which a real-time endogenous BCI was evaluated using conventional machine learning. Specifically, we present an offline benchmark of 23 deep neural network architectures originally developed for scalp-EEG, which were adapted to ear-EEG and evaluated under an identical validation framework. To the best of our knowledge, this is the first systematic comparison of this breadth for ear-EEG-based mental-task classification. Beyond conventional performance comparison, we identify the optimal architecture by jointly considering statistical significance and a performance-cost trade-off, incorporating classification accuracy, parameter count, and measured computational cost. Our results demonstrate that FBLightConvNet achieves the highest classification accuracy among all evaluated models and outperforms common spatial pattern-linear discriminant analysis (CSP-LDA), a widely adopted and robust conventional baseline, on all three recording days, with the difference reaching statistical significance on Days 2 and 3.",
+      "evidence": "Specifically, we present an offline benchmark of 23 deep neural network architectures originally developed for scalp-EEG, which were adapted to ear-EEG and evaluated under an identical validation framework.",
+      "conditions": [
+        "we retrospectively analyze the ear-EEG dataset of a previous study in which a real-time endogenous BCI was evaluated using conventional machine learning.",
+        "on all three recording days, with the difference reaching statistical significance on Days 2 and 3."
+      ],
+      "validSummary": "该研究对既有 ear-EEG 数据集离线比较了 23 种网络架构；结果限于相同验证框架和三个记录日，不代表在线患者控制。",
+      "incorrectClaim": "这项研究证明系统能在线读心并改善患者功能。",
+      "forbiddenTags": ["动物实验", "小样本患者结果", "临床试验结果", "真实部署"]
+    },
+    {
+      "id": "macaque-vr-bci",
+      "factTitle": "猕猴皮层内 BCI 导航实验",
+      "category": "interaction-consumer",
+      "categoryTag": "交互与消费",
+      "stageTag": "动物实验",
+      "sourceTitle": "Intracortical brain-computer interface for navigation in virtual reality in macaque monkeys.",
+      "sourceUrl": "https://doi.org/10.1126/sciadv.adw3876",
+      "sourceText": "We present an innovative intracortical brain-computer interface (BCI) to bridge the gap between laboratory settings and real-world applications. This BCI approach introduces three key advancements. First, we used neural signals from three macaque brain regions-primary motor, dorsal, and ventral premotor cortex-enabling precise and flexible decoding of real-time three-dimensional (3D) sphere/avatar velocities. Second, we developed a realistic, immersive 3D virtual reality setup with dynamic camera tracking, allowing continuous navigation and obstacle avoidance that closely mimic real-world scenarios. Last, our BCI approach is very well suited for use by paralyzed patients, featuring a brief passive fixation without overt movements and closed-loop operation without retraining of the decoder during online decoding, relying on the user's neural plasticity and the decoder's robust generalization across tasks.",
+      "evidence": "we used neural signals from three macaque brain regions-primary motor, dorsal, and ventral premotor cortex-enabling precise and flexible decoding of real-time three-dimensional (3D) sphere/avatar velocities.",
+      "conditions": [
+        "First, we used neural signals from three macaque brain regions-primary motor, dorsal, and ventral premotor cortex",
+        "Second, we developed a realistic, immersive 3D virtual reality setup with dynamic camera tracking"
+      ],
+      "validSummary": "该研究在猕猴中用皮层内信号控制虚拟现实中的三维移动；证据来自动物实验，不能写成人体或患者结果。",
+      "incorrectClaim": "患者已通过该系统实现真实环境中的日常独立移动。",
+      "forbiddenTags": ["人体实验", "小样本患者结果", "临床试验结果", "真实部署"]
+    },
+    {
+      "id": "healthy-human-p300",
+      "factTitle": "48 名健康受试者 P300 实验",
+      "category": "hardware-acquisition",
+      "categoryTag": "硬件与采集",
+      "stageTag": "人体实验",
+      "sourceTitle": "A Few-Channel Brain-Computer Interface System Based on a Heuristic Algorithm.",
+      "sourceUrl": "https://doi.org/10.3390/biomimetics11090613",
+      "sourceText": "To enhance practicality, this paper proposes a fixed few-channel selection framework based on a heuristic algorithm to balance decoding performance and user experience. We integrated a genetic algorithm (GA) with Bayesian linear discriminant analysis (BLDA) to identify a strongly generalizable few-channel combination from a traditional eight-channel system, avoiding costly subject-specific recalibration. Validating this method, 48 healthy subjects completed rigorous offline and online virtual reality (VR) experiments. Results showed that the proposed three-channel system maintained highly comparable accuracy and information transfer rates to the eight-channel system, showing no significant performance degradation. Crucially, the few-channel scheme reduced equipment preparation time by 90% (from 30 to 3 min). Furthermore, NASA-TLX workload evaluations confirmed a significant reduction in users' psychological and physical burdens (p < 0.05).",
+      "evidence": "48 healthy subjects completed rigorous offline and online virtual reality (VR) experiments.",
+      "conditions": [
+        "48 healthy subjects completed rigorous offline and online virtual reality (VR) experiments.",
+        "the proposed three-channel system maintained highly comparable accuracy and information transfer rates to the eight-channel system"
+      ],
+      "validSummary": "该方法在 48 名健康受试者中进行了离线和在线 VR 实验；结果不能改写为患者疗效或已获批治疗。",
+      "incorrectClaim": "该系统已在患者中验证疗效并获准治疗。",
+      "forbiddenTags": ["小样本患者结果", "临床试验结果", "注册获批", "商业供货"]
+    },
+    {
+      "id": "two-patient-typing-results",
+      "factTitle": "两名四肢瘫痪患者打字结果",
+      "category": "decoding-signal",
+      "categoryTag": "解码与信号处理",
+      "stageTag": "小样本患者结果",
+      "sourceTitle": "Restoring rapid natural bimanual typing with a neuroprosthesis after paralysis.",
+      "sourceUrl": "https://doi.org/10.1038/s41593-026-02218-y",
+      "sourceText": "This typing neuroprosthesis performed well for two iBCI clinical trial participants with tetraplegia-one with amyotrophic lateral sclerosis and one with spinal cord injury. Typing speed is user-regulated, reaching 110 characters per minute, resulting in 22 words per minute with a word error rate of 1.6%. This resembles able-bodied typing accuracy and provides higher throughput than current state-of-the-art hand motor iBCI decoding. In summary, a typing neuroprosthesis decoding finger movements, provides an intuitive, familiar and easy-to-learn paradigm for individuals with impaired communication due to paralysis.",
+      "evidence": "This typing neuroprosthesis performed well for two iBCI clinical trial participants with tetraplegia-one with amyotrophic lateral sclerosis and one with spinal cord injury.",
+      "conditions": [
+        "two iBCI clinical trial participants with tetraplegia-one with amyotrophic lateral sclerosis and one with spinal cord injury.",
+        "Typing speed is user-regulated, reaching 110 characters per minute, resulting in 22 words per minute with a word error rate of 1.6%."
+      ],
+      "validSummary": "研究报告了两名四肢瘫痪 iBCI 试验参与者的打字结果；样本和人群范围有限，不等于对整项临床试验作出疗效结论。",
+      "incorrectClaim": "该研究已证明脑机接口对所有瘫痪患者有效。",
+      "forbiddenTags": ["注册获批", "商业供货", "真实部署"]
+    },
+    {
+      "id": "stroke-rct-results",
+      "factTitle": "18 名卒中患者随机试验",
+      "category": "clinical-medical",
+      "categoryTag": "临床与医疗",
+      "stageTag": "临床试验结果",
+      "sourceTitle": "Intermittent theta burst stimulation enhances the efficacy of brain-computer interface in upper limb rehabilitation post-stroke.",
+      "sourceUrl": "https://doi.org/10.3389/fneur.2026.1839697",
+      "sourceText": "This exploratory single-center randomized controlled trial (RCT) enrolled 18 subacute stroke patients, randomized to: BCI group (conventional rehab + BCI training) or iTBS + BCI group (conventional rehab + iTBS applied to the affected M1 cortex followed sequentially by BCI training). Interventions occurred 10 times over 2 weeks. Primary outcome: Fugl-Meyer Assessment - Upper Extremity (FMA-UE) score. Secondary outcomes: Modified Barthel Index (MBI), BCI task accuracy (BCI-TA). Mechanistic measures: sensorimotor cortex ERD and Laterality Index (LI). In this exploratory study, FMA-UE improvement was greater in the iTBS + BCI group, with significant differences at week 4 (Z = 2.569, p = 0.008). iTBS + BCI group showed a greater BCI-TA increase (87.22 ± 10.83% vs. 68.24 ± 5.75%, p = 0.041). This exploratory study suggests that sequential iTBS combined with BCI may have potential benefits in enhancing upper limb function in stroke patients.",
+      "evidence": "This exploratory single-center randomized controlled trial (RCT) enrolled 18 subacute stroke patients",
+      "conditions": [
+        "18 subacute stroke patients",
+        "Interventions occurred 10 times over 2 weeks.",
+        "FMA-UE improvement was greater in the iTBS + BCI group, with significant differences at week 4 (Z = 2.569, p = 0.008)."
+      ],
+      "validSummary": "这项单中心探索性随机试验纳入 18 名亚急性卒中患者并报告了 4 周结果；结论限于该试验设计和终点。",
+      "incorrectClaim": "该试验证明联合治疗已对卒中患者普遍有效。",
+      "forbiddenTags": ["注册获批", "商业供货", "真实部署"]
+    },
+    {
+      "id": "wireless-prototype",
+      "factTitle": "无线 BCI 原型验证",
+      "category": "interaction-consumer",
+      "categoryTag": "交互与消费",
+      "stageTag": "原型演示",
+      "sourceTitle": "Secure wireless communication of brain-computer interface and mind control of smart devices enabled by space-time-coding metasurface.",
+      "sourceUrl": "https://doi.org/10.1038/s41467-025-63326-0",
+      "sourceText": "We propose a deep fusion coding scheme that combines the BCI visual stimulation coding with metasurface space-time coding at the physical layer, enabling reliable and secure information transfers between the human brain and external devices. A brain space-time-coding metasurface platform is designed to implement a secure wireless communication system by using harmonic-encrypted beams. We design and fabricate a proof-of-principle prototype and experimentally show that the proposed wireless BCI scheme can establish a remote but safeguarded paradigm for human-machine interactions and intelligent metasurfaces, providing a potential direction in future secure wireless communications.",
+      "evidence": "We design and fabricate a proof-of-principle prototype and experimentally show that the proposed wireless BCI scheme can establish a remote but safeguarded paradigm for human-machine interactions",
+      "conditions": [
+        "A brain space-time-coding metasurface platform is designed to implement a secure wireless communication system by using harmonic-encrypted beams."
+      ],
+      "validSummary": "研究制造并测试了无线 BCI 原理验证原型；原文没有据此证明患者实验、注册批准、商业供货或真实部署。",
+      "incorrectClaim": "这套原型已在患者日常环境中部署并获批销售。",
+      "forbiddenTags": ["动物实验", "人体实验", "小样本患者结果", "临床试验结果", "注册获批", "商业供货", "真实部署"]
+    }
+  ],
+  "regulatoryApproval": {
+    "factTitle": "RNS System PMA 批准",
+    "category": "neuromodulation-closed-loop",
+    "categoryTag": "神经调控与闭环",
+    "stageTag": "注册获批",
+    "sourceTitle": "FDA Premarket Approval P100026 - NeuroPace RNS System",
+    "sourceUrl": "https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfpma/pma.cfm?id=P100026",
+    "sourceText": "Device: NEUROPACE RNS SYSTEM. Generic Name: Implanted brain stimulator for epilepsy. Applicant: NeuroPace, Inc. PMA Number: P100026. Decision Date: 11/14/2013. APPROVAL FOR THE RNS SYSTEM. THIS DEVICE IS INDICATED AS FOLLOWS: AS AN ADJUNCTIVE THERAPY IN REDUCING THE FREQUENCY OF SEIZURES IN INDIVIDUALS 18 YEARS OF AGE OR OLDER WITH PARTIAL ONSET SEIZURES WHO HAVE UNDERGONE DIAGNOSTIC TESTING THAT LOCALIZEDNO MORE THAN 2 EPILEPTOGENIC FOCI, ARE REFRACTORY TO TWO OR MORE ANTIEPILEPTIC MEDICATIONS, AND CURRENTLY HAVE FREQUENT AND DISABLING SEIZURES. THE RNS SYSTEM HAS DEMONSTRATED SAFETY AND EFFECTIVENESS IN PATIENTS WHO AVERAGE 3 OR MORE DISABLING SEIZURES PER MONTH OVER THE THREE MOST RECENT MONTHS, AND HAS NOT BEEN EVALUATED IN PATIENTS WITH LESS FREQUENT SEIZURES.",
+    "evidence": "APPROVAL FOR THE RNS SYSTEM. THIS DEVICE IS INDICATED AS FOLLOWS:",
+    "conditions": [
+      "18 YEARS OF AGE OR OLDER WITH PARTIAL ONSET SEIZURES",
+      "NO MORE THAN 2 EPILEPTOGENIC FOCI, ARE REFRACTORY TO TWO OR MORE ANTIEPILEPTIC MEDICATIONS",
+      "AVERAGE 3 OR MORE DISABLING SEIZURES PER MONTH OVER THE THREE MOST RECENT MONTHS",
+      "HAS NOT BEEN EVALUATED IN PATIENTS WITH LESS FREQUENT SEIZURES."
+    ],
+    "validSummary": "FDA 的 PMA 记录显示 RNS System 于 2013 年获批，用作满足年龄、诊断、用药和发作频率条件的成人部分性癫痫辅助治疗；不适用于记录未评估的人群。",
+    "incorrectClaim": "FDA 已批准 RNS System 用于所有癫痫患者和所有适应证。",
+    "approvalNumber": "P100026",
+    "decisionDate": "2013-11-14",
+    "accessNote": "BCIHOT 草案中的 NMPA 2026-03-13 博睿康公告 URL 返回 HTTP 412，本地保留为待人工核验；FDA PMA 是本测试中的真实监管获批正例。"
+  }
+}

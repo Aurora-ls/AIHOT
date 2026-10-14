@@ -1,0 +1,9 @@
+file:///D:/code/AIHOT/docs/bcihot/seed-review.ts:33
+  if (counts .articles || counts .reports) throw new Error("review fixture seeding requires no existing articles or reports; use a fresh test database");
+                                                 ^
+
+Error: review fixture seeding requires no existing articles or reports; use a fresh test database
+    at file:///D:/code/AIHOT/docs/bcihot/seed-review.ts:33:50
+    at process.processTicksAndRejections (node:internal/process/task_queues:104:5)
+
+Node.js v24.19.0
